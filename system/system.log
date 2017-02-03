@@ -1,0 +1,15 @@
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+WARNING:EDK:3712 - IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - Frequency of the interconnect's clock port could not be determined. All IPs in the design will be considered to be asynchronous with respect to the interconnect. This will lead to more resource usage. You can avoid this by specifying the clock frequency on the port that the interconnect's clock is connected to.
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\burneykb\cpre488mp1\system\etc\system.filters
+Done writing Tab View settings to:
+	C:\Users\burneykb\cpre488mp1\system\etc\system.gui
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\burneykb\cpre488mp1\system\etc\system.filters
+Done writing Tab View settings to:
+	C:\Users\burneykb\cpre488mp1\system\etc\system.gui
