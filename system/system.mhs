@@ -35,6 +35,8 @@
  PORT processing_system7_0_DDR_DQS_n = processing_system7_0_DDR_DQS_n, DIR = IO, VEC = [3:0]
  PORT processing_system7_0_DDR_VRN = processing_system7_0_DDR_VRN, DIR = IO
  PORT processing_system7_0_DDR_VRP = processing_system7_0_DDR_VRP, DIR = IO
+ PORT axi_ppm_0_PPM_INPUT = axi_ppm_0_PPM_INPUT, DIR = I
+ PORT axi_ppm_0_PPM_OUTPUT = axi_ppm_0_PPM_OUTPUT, DIR = O
 
 
 BEGIN axi_interconnect
@@ -171,5 +173,17 @@ BEGIN processing_system7
  PORT FCLK_CLK0 = processing_system7_0_FCLK_CLK0
  PORT FCLK_RESET0_N = processing_system7_0_FCLK_RESET0_N_0
  PORT M_AXI_GP0_ACLK = processing_system7_0_FCLK_CLK0
+ PORT FCLK_CLK1 = processing_system7_0_FCLK_CLK1
+END
+
+BEGIN axi_ppm
+ PARAMETER INSTANCE = axi_ppm_0
+ PARAMETER HW_VER = 1.00.a
+ PARAMETER C_BASEADDR = 0x7de00000
+ PARAMETER C_HIGHADDR = 0x7de0ffff
+ BUS_INTERFACE S_AXI = axi4lite_0
+ PORT S_AXI_ACLK = processing_system7_0_FCLK_CLK0
+ PORT PPM_OUTPUT = axi_ppm_0_PPM_OUTPUT
+ PORT PPM_INPUT = axi_ppm_0_PPM_INPUT
 END
 

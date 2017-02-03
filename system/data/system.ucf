@@ -25,4 +25,5 @@ NET SWs_8Bits_TRI_IO[7] LOC = "M15"  |  IOSTANDARD = "LVCMOS25";
 #
 # additional constraints
 #
-
+NET axi_ppm_0_PPM_INPUT LOC = "W8"   | IOSTANDARD = "LVCMOS33";
+NET axi_ppm_0_PPM_OUTPUT LOC = "AA9"   | IOSTANDARD = "LVCMOS33";

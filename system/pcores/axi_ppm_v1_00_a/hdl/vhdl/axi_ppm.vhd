@@ -139,6 +139,8 @@ entity axi_ppm is
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
     --USER ports added here
+    PPM_INPUT							  : in  std_logic;
+	 PPM_OUTPUT							  : out std_logic;
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
