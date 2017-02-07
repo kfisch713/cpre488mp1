@@ -74,9 +74,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1486410973" xil_pn:in_ck="2939063806952850392" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1486410973">
+    <transform xil_pn:end_ts="1486430143" xil_pn:in_ck="2939063806952850392" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1486430143">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../../../../PPM_generate.vhdl"/>
       <outfile xil_pn:name="../../hdl/vhdl/axi_ppm.vhd"/>
       <outfile xil_pn:name="../../hdl/vhdl/user_logic.vhd"/>
@@ -104,9 +108,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1486410973" xil_pn:in_ck="2939063806952850392" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1486410973">
+    <transform xil_pn:end_ts="1486430143" xil_pn:in_ck="2939063806952850392" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1486430143">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../../../../PPM_generate.vhdl"/>
       <outfile xil_pn:name="../../hdl/vhdl/axi_ppm.vhd"/>
       <outfile xil_pn:name="../../hdl/vhdl/user_logic.vhd"/>
@@ -122,10 +131,13 @@
       <outfile xil_pn:name="C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd"/>
       <outfile xil_pn:name="C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1486410974" xil_pn:in_ck="2939063806952850392" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3214391824022988351" xil_pn:start_ts="1486410973">
+    <transform xil_pn:end_ts="1486430143" xil_pn:in_ck="2939063806952850392" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3214391824022988351" xil_pn:start_ts="1486430143">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ppm_generate.fdo"/>
       <outfile xil_pn:name="vsim.wlf"/>

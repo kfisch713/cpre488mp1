@@ -15,7 +15,7 @@
 # do {ppm_generate.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
-# Start time: 13:56:28 on Feb 06,2017
+# Start time: 19:15:47 on Feb 06,2017
 # vcom -reportprogress 300 -explicit -93 ../../../../../PPM_generate.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -23,10 +23,10 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ppm_generate
 # -- Compiling architecture ppm_generate_arch of ppm_generate
-# End time: 13:56:28 on Feb 06,2017, Elapsed time: 0:00:00
+# End time: 19:15:47 on Feb 06,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work work.ppm_generate 
-# Start time: 13:56:28 on Feb 06,2017
+# Start time: 19:15:47 on Feb 06,2017
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Note: (vopt-143) Recognized 1 FSM in architecture body "ppm_generate(ppm_generate_arch)".
 # Loading std.standard
@@ -36,9 +36,9 @@
 # Loading work.ppm_generate(ppm_generate_arch)#1
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: kacao  Hostname: CO2041-15  ProcessID: 70408
-#           Attempting to use alternate WLF file "./wlftt5yadd".
+#           Attempting to use alternate WLF file "./wlftasn1wg".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftt5yadd
+#           Using alternate file: ./wlftasn1wg
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
@@ -58,189 +58,23 @@
 #    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# Optimization canceled
-quit -sim
-# End time: 13:59:00 on Feb 06,2017, Elapsed time: 0:02:32
-# Errors: 1, Warnings: 10
-# Optimization canceled
-vsim -novopt work.ppm_generate
-# vsim -novopt work.ppm_generate 
-# Start time: 13:59:34 on Feb 06,2017
-# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
-# Loading std.standard
-# Refreshing U:/Documents/488_Lab/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/work.ppm_generate(ppm_generate_arch)
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.ppm_generate(ppm_generate_arch)
-add wave -position end  sim:/ppm_generate/clk
-add wave -position end  sim:/ppm_generate/slv_reg20
-add wave -position end  sim:/ppm_generate/slv_reg21
-add wave -position end  sim:/ppm_generate/slv_reg22
-add wave -position end  sim:/ppm_generate/slv_reg23
-add wave -position end  sim:/ppm_generate/slv_reg24
-add wave -position end  sim:/ppm_generate/slv_reg25
-add wave -position end  sim:/ppm_generate/flag
-add wave -position end  sim:/ppm_generate/ppm_output
-add wave -position end  sim:/ppm_generate/slv_reg_data
-add wave -position end  sim:/ppm_generate/slv_reg_data_minus1
-add wave -position end  sim:/ppm_generate/low_counter_data
-add wave -position end  sim:/ppm_generate/channel_mux_output
-add wave -position end  sim:/ppm_generate/low_counter_data_minus1
-add wave -position end  sim:/ppm_generate/timer_20_ms
-add wave -position end  sim:/ppm_generate/channel_select_reset
-add wave -position end  sim:/ppm_generate/slv_reg_select
-add wave -position end  sim:/ppm_generate/low_counter_select
-add wave -position end  sim:/ppm_generate/channel_select_write_enable
-add wave -position end  sim:/ppm_generate/ppm_to_low
-add wave -position end  sim:/ppm_generate/ppm_to_high
-add wave -position end  sim:/ppm_generate/channel_select
-add wave -position end  sim:/ppm_generate/PS
-add wave -position end  sim:/ppm_generate/NS
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: kacao  Hostname: CO2041-15  ProcessID: 70408
-#           Attempting to use alternate WLF file "./wlfti1s0qa".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfti1s0qa
-force -freeze sim:/ppm_generate/clk 1 0, 0 {5 ps} -r 10
+force -freeze sim:/ppm_generate/clk 1 0, 0 {5000 ps} -r {10 ns}
 force -freeze sim:/ppm_generate/slv_reg20 10 0
+force -freeze sim:/ppm_generate/slv_reg21 20 0
+force -freeze sim:/ppm_generate/slv_reg22 30 0
+force -freeze sim:/ppm_generate/slv_reg23 40 0
+force -freeze sim:/ppm_generate/slv_reg24 50 0
+force -freeze sim:/ppm_generate/slv_reg25 60 0
 run
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 4000010 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 4000020 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 20000010 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 24000020 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 24000030 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 40000020 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 44000030 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 44000040 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 60000030 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 64000040 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 64000050 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 80000040 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 84000050 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 84000060 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 100000050 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 104000060 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 104000070 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 120000060 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 124000070 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 124000080 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 140000070 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 144000080 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 144000090 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 160000080 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 164000090 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 164000100 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 180000090 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 184000100 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 184000110 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 200000100 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 204000110 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 204000120 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 220000110 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 224000120 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 224000130 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 240000120 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 244000130 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 244000140 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 260000130 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 264000140 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 264000150 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 280000140 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 284000150 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 284000160 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 300000150 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 304000160 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 304000170 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 320000160 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 324000170 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 324000180 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 340000170 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 344000180 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 344000190 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 360000180 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 364000190 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 364000200 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 380000190 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 384000200 ps  Iteration: 5  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 384000210 ps  Iteration: 3  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 400000200 ps  Iteration: 3  Instance: /ppm_generate
-quit -sim
-# End time: 14:02:45 on Feb 06,2017, Elapsed time: 0:03:11
-# Errors: 0, Warnings: 71
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 19:24:49 on Feb 06,2017, Elapsed time: 0:09:02
+# Errors: 0, Warnings: 10

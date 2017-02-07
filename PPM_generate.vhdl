@@ -11,7 +11,6 @@ entity ppm_generate is
 		  slv_reg23 : in std_logic_vector(31 downto 0);
 		  slv_reg24 : in std_logic_vector(31 downto 0);
 		  slv_reg25 : in std_logic_vector(31 downto 0);
-		  flag 		: out unsigned(31 downto 0);
 		  ppm_output : out std_logic );
 end ppm_generate;
 
@@ -26,7 +25,7 @@ architecture ppm_generate_arch of ppm_generate is
 	
 	signal channel_select_reset, slv_reg_select, low_counter_select, channel_select_write_enable : std_logic;
 	signal ppm_to_low, ppm_to_high : std_logic;
-	signal channel_select : unsigned(2 downto 1);
+	signal channel_select : unsigned(2 downto 0);
 	
 	type state_type is (S1a, S1b, S2a, S2b, S2c, S3);
 	signal PS, NS : state_type;
@@ -41,10 +40,8 @@ architecture ppm_generate_arch of ppm_generate is
 		if rising_edge(clk) then
 			timer_20_ms <= timer_20_ms + 1;
 			PS <= NS;
-			
-			--flag <= to_unsigned(1, 32);
 
-			if (timer_20_ms >= 2000000) then 
+			if (timer_20_ms > 2000000) then 
 				timer_20_ms <= (others => '0');
 				PS <= S1a;
 			end if; 
@@ -69,7 +66,7 @@ architecture ppm_generate_arch of ppm_generate is
 				NS <= S1b;
 				
 			when S1b =>
-				channel_select_reset <= '1';
+				channel_select_reset <= '0';
 				channel_select_write_enable <= '0';
 				slv_reg_select <= '0';
 				low_counter_select <= '1';
@@ -106,7 +103,7 @@ architecture ppm_generate_arch of ppm_generate is
 				slv_reg_select <= '0';
 				low_counter_select <= '1';
 				
-				if (channel_select = "101" and ppm_to_high = '1') then
+				if (channel_select = 5 and ppm_to_high = '1') then
 					NS <= S3;
 				elsif (ppm_to_high = '1') then
 					NS <= S2a;
@@ -185,15 +182,12 @@ architecture ppm_generate_arch of ppm_generate is
 	end process;
 	
 	--5. Channel select
-	process(clk, channel_select_reset, channel_select_write_enable)
+	process(channel_select_reset, channel_select_write_enable)
 	begin
-		flag <= to_unsigned(2, 32);
+		channel_select <= channel_select;
 	
 		if (channel_select_write_enable = '1') then
-			channel_select <= unsigned(channel_select) + 1;
-			
-		else
-			channel_select <= channel_select;
+			channel_select <= unsigned(channel_select) + 1;	
 		end if;
 		
 		-- reseting takes priority over incermenting 
@@ -221,12 +215,12 @@ architecture ppm_generate_arch of ppm_generate is
 	end process;
 	
 	--8. low_counter_mux
-	process(clk, low_counter_select, low_counter_data_minus1)
+	process(low_counter_select, low_counter_data_minus1)
 	begin
 		if(low_counter_select = '1') then
 			low_counter_data <= low_counter_data_minus1;
 		else
-			low_counter_data <= to_unsigned(400000, 32);
+			low_counter_data <= to_unsigned(40000, 32);
 		end if;
 	end process;
 	
