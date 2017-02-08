@@ -29,8 +29,6 @@ architecture ppm_generate_arch of ppm_generate is
 	
 	type state_type is (S1a, S1b, S2a, S2b, S2c, S3);
 	signal PS, NS : state_type;
-	
-	
 
 	begin
 	
