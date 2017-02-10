@@ -626,23 +626,23 @@ Primitive and Black Box Usage:
 #      GND                         : 7
 #      INV                         : 114
 #      LUT1                        : 89
-#      LUT2                        : 114
+#      LUT2                        : 113
 #      LUT3                        : 126
 #      LUT4                        : 245
 #      LUT5                        : 222
-#      LUT6                        : 872
+#      LUT6                        : 873
 #      MUXCY                       : 175
 #      MUXF7                       : 58
 #      VCC                         : 5
 #      XORCY                       : 153
-# FlipFlops/Latches                : 1876
+# FlipFlops/Latches                : 1875
 #      FD                          : 228
 #      FDC                         : 15
-#      FDE                         : 82
+#      FDE                         : 274
 #      FDR                         : 112
 #      FDRE                        : 896
 #      FDSE                        : 21
-#      LD                          : 484
+#      LD                          : 291
 #      LDC                         : 6
 #      LDE                         : 32
 # Shift Registers                  : 21
@@ -663,18 +663,18 @@ Selected Device : 7z020clg484-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1876  out of  106400     1%  
+ Number of Slice Registers:            1875  out of  106400     1%  
  Number of Slice LUTs:                 1803  out of  53200     3%  
     Number used as Logic:              1782  out of  53200     3%  
     Number used as Memory:               21  out of  17400     0%  
        Number used as SRL:               21
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3176
-   Number with an unused Flip Flop:    1300  out of   3176    40%  
-   Number with an unused LUT:          1373  out of   3176    43%  
-   Number of fully used LUT-FF pairs:   503  out of   3176    15%  
-   Number of unique control sets:        81
+ Number of LUT Flip Flop pairs used:   3152
+   Number with an unused Flip Flop:    1277  out of   3152    40%  
+   Number with an unused LUT:          1349  out of   3152    42%  
+   Number of fully used LUT-FF pairs:   526  out of   3152    16%  
+   Number of unique control sets:        82
 
 IO Utilization: 
  Number of IOs:                         153
@@ -704,8 +704,8 @@ Clock Information:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------+
 Clock Signal                                                                                                                                                                                        | Clock buffer(FF name)                                                      | Load  |
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------+
-processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>                                                                                                                                    | BUFG                                                                       | 1375  |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd2                                                                                                                                            | BUFG                                                                       | 256   |
+processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>                                                                                                                                    | BUFG                                                                       | 1567  |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd2                                                                                                                                            | BUFG                                                                       | 64    |
 axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_564_o(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_channel_mux_write_channel_mux_select[2]_AND_564_o1:O)| BUFG(*)(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/tmp_reg_5_0)          | 32    |
 axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_403_o(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_channel_mux_write_channel_mux_select[2]_AND_403_o1:O)| BUFG(*)(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/tmp_reg_4_0)          | 32    |
 axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_274_o(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_channel_mux_write_channel_mux_select[2]_AND_274_o1:O)| BUFG(*)(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/tmp_reg_3_0)          | 32    |
@@ -713,10 +713,10 @@ axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_selec
 axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_112_o(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_channel_mux_write_channel_mux_select[2]_AND_112_o1:O)| BUFG(*)(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/tmp_reg_1_0)          | 32    |
 axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd3                                                                                                                                            | BUFG                                                                       | 32    |
 axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd1                                                                                                                                            | NONE(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_select_2)    | 3     |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS__n0548<0>1:O)                                                                             | BUFG(*)(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_counter_0)      | 33    |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS__n0386<0>1:O)                                                                             | BUFG(*)(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_counter_0)      | 32    |
 axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o1:O)             | BUFG(*)(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_mux_output_0)| 32    |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03291(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n0329111:O)                                                                          | NONE(*)(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_2)    | 3     |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram_PS[2]_PWR_63_o_Mux_17_o(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram_PS[2]_PWR_63_o_Mux_17_o11:O)                                          | NONE(*)(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/NS_2)                | 3     |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n0326111:O)                                                                          | NONE(*)(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_2)    | 3     |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram_PS[2]_PWR_63_o_Mux_17_o(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram_PS[2]_PWR_63_o_Mux_17_o11:O)                                          | NONE(*)(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/NS_0)                | 3     |
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------+
 (*) These 9 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -743,7 +743,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>'
   Clock period: 6.364ns (frequency: 157.122MHz)
-  Total number of paths / destination ports: 93774 / 2508
+  Total number of paths / destination ports: 94158 / 2700
 -------------------------------------------------------------------------
 Delay:               6.364ns (Levels of Logic = 11)
   Source:            axi_ppm_0/axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg (FF)
@@ -850,49 +850,22 @@ Delay:               1.307ns (Levels of Logic = 1)
                                        (34.9% logic, 65.1% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable'
-  Clock period: 2.185ns (frequency: 457.666MHz)
-  Total number of paths / destination ports: 40 / 1
--------------------------------------------------------------------------
-Delay:               2.185ns (Levels of Logic = 6)
-  Source:            axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_counter_12 (LATCH)
-  Destination:       axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_reached_idle_state (LATCH)
-  Source Clock:      axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable falling
-  Destination Clock: axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable falling
-
-  Data Path: axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_counter_12 to axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_reached_idle_state
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               9   0.389   0.778  axi_ppm_0/USER_LOGIC_I/our_capture/timer_counter_12 (axi_ppm_0/USER_LOGIC_I/our_capture/timer_counter_12)
-     LUT5:I0->O            1   0.053   0.000  axi_ppm_0/USER_LOGIC_I/our_capture/Mcompar_GND_53_o_timer_counter[31]_LessThan_49_o_lut<0> (axi_ppm_0/USER_LOGIC_I/our_capture/Mcompar_GND_53_o_timer_counter[31]_LessThan_49_o_lut<0>)
-     MUXCY:S->O            1   0.291   0.000  axi_ppm_0/USER_LOGIC_I/our_capture/Mcompar_GND_53_o_timer_counter[31]_LessThan_49_o_cy<0> (axi_ppm_0/USER_LOGIC_I/our_capture/Mcompar_GND_53_o_timer_counter[31]_LessThan_49_o_cy<0>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/our_capture/Mcompar_GND_53_o_timer_counter[31]_LessThan_49_o_cy<1> (axi_ppm_0/USER_LOGIC_I/our_capture/Mcompar_GND_53_o_timer_counter[31]_LessThan_49_o_cy<1>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/our_capture/Mcompar_GND_53_o_timer_counter[31]_LessThan_49_o_cy<2> (axi_ppm_0/USER_LOGIC_I/our_capture/Mcompar_GND_53_o_timer_counter[31]_LessThan_49_o_cy<2>)
-     MUXCY:CI->O           1   0.178   0.413  axi_ppm_0/USER_LOGIC_I/our_capture/Mcompar_GND_53_o_timer_counter[31]_LessThan_49_o_cy<3> (axi_ppm_0/USER_LOGIC_I/our_capture/Mcompar_GND_53_o_timer_counter[31]_LessThan_49_o_cy<3>)
-     LUT5:I4->O            1   0.053   0.000  axi_ppm_0/USER_LOGIC_I/our_capture/Mcompar_GND_53_o_timer_counter[31]_LessThan_49_o_cy<4> (axi_ppm_0/USER_LOGIC_I/our_capture/GND_53_o_timer_counter[31]_LessThan_49_o)
-     LD:D                     -0.021          axi_ppm_0/USER_LOGIC_I/our_capture/timer_reached_idle_state
-    ----------------------------------------
-    Total                      2.185ns (0.994ns logic, 1.191ns route)
-                                       (45.5% logic, 54.5% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03291'
+Timing constraint: Default period analysis for Clock 'axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261'
   Clock period: 1.414ns (frequency: 707.006MHz)
   Total number of paths / destination ports: 6 / 3
 -------------------------------------------------------------------------
 Delay:               1.414ns (Levels of Logic = 1)
   Source:            axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 (LATCH)
   Destination:       axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 (LATCH)
-  Source Clock:      axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03291 falling
-  Destination Clock: axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03291 falling
+  Source Clock:      axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261 falling
+  Destination Clock: axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261 falling
 
   Data Path: axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 to axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      LDC:G->Q             68   0.389   0.559  axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 (axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0)
-     INV:I->O              1   0.067   0.399  axi_ppm_0/USER_LOGIC_I/our_generate/Madd_channel_select[2]_GND_474_o_add_39_OUT_xor<0>11_INV_0 (axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_GND_474_o_add_39_OUT<0>)
+     INV:I->O              1   0.067   0.399  axi_ppm_0/USER_LOGIC_I/our_generate/Madd_channel_select[2]_GND_281_o_add_39_OUT_xor<0>11_INV_0 (axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_GND_281_o_add_39_OUT<0>)
      LDC:D                    -0.021          axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0
     ----------------------------------------
     Total                      1.414ns (0.456ns logic, 0.958ns route)
@@ -1010,18 +983,12 @@ processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|         |     
 ----------------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd2
-----------------------------------------------------------------------------------------------+---------+---------+---------+---------+
-                                                                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------------------------------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd2                                      |         |         |    1.922|         |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd3                                      |         |         |    0.788|         |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_112_o|         |         |    0.788|         |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_177_o|         |         |    0.788|         |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_274_o|         |         |    0.788|         |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_403_o|         |         |    0.788|         |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_564_o|         |         |    0.788|         |
-----------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+--------------------------------------------------------+---------+---------+---------+---------+
+                                                        | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                            |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------------+---------+---------+---------+---------+
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd2|         |         |    1.922|         |
+--------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd3
 ---------------------------------------------------------+---------+---------+---------+---------+
@@ -1077,7 +1044,6 @@ Clock to Setup on destination clock axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture
                                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable       |         |         |    2.185|         |
 processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|         |         |    0.974|         |
 ----------------------------------------------------------------+---------+---------+---------+---------+
 
@@ -1086,17 +1052,17 @@ Clock to Setup on destination clock axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generat
                                                                                          | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -----------------------------------------------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03291                               |         |         |    1.989|         |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261                               |         |         |    1.989|         |
 axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o|         |         |   10.241|         |
 processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>                         |         |         |   10.260|         |
 -----------------------------------------------------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03291
+Clock to Setup on destination clock axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261
 ----------------------------------------------------------------+---------+---------+---------+---------+
                                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03291      |         |         |    1.414|         |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261      |         |         |    1.414|         |
 processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|         |         |    1.840|         |
 ----------------------------------------------------------------+---------+---------+---------+---------+
 
@@ -1105,31 +1071,37 @@ Clock to Setup on destination clock axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generat
                                                                 | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ----------------------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03291      |         |         |    1.800|         |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261      |         |         |    1.800|         |
 processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|         |         |    1.442|         |
 ----------------------------------------------------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>
------------------------------------------------------------------------------------------+---------+---------+---------+---------+
-                                                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd2                                 |         |    2.568|         |         |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable                                |         |    1.967|         |         |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram_PS[2]_PWR_63_o_Mux_17_o               |         |    0.799|         |         |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o|         |    2.155|         |         |
-processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>                         |    6.364|         |         |         |
------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+----------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd2                                      |         |    2.196|         |         |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd3                                      |         |    0.799|         |         |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_112_o|         |    0.799|         |         |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_177_o|         |    0.799|         |         |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_274_o|         |    0.799|         |         |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_403_o|         |    0.799|         |         |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_564_o|         |    0.799|         |         |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable                                     |         |    2.863|         |         |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram_PS[2]_PWR_63_o_Mux_17_o                    |         |    0.799|         |         |
+axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o     |         |    2.155|         |         |
+processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>                              |    6.364|         |         |         |
+----------------------------------------------------------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 14.00 secs
-Total CPU time to Xst completion: 14.48 secs
+Total CPU time to Xst completion: 14.53 secs
  
 --> 
 
-Total memory usage is 531336 kilobytes
+Total memory usage is 529864 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    8 (   0 filtered)

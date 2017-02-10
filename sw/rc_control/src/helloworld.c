@@ -77,15 +77,16 @@ int main()
     }
     */
 
+	*slv_reg20 = 0x100;
+	*slv_reg21 = 0xF186a0;
+	*slv_reg22 = 0xF186a0;
+	*slv_reg23 = 0x100;
+	*slv_reg24 = 0x100;
+	*slv_reg25 = 0x100;
+
     //generate
     while(!(*SWs & 0x8)){
-    	*slv_reg20 = 0;
-    	*slv_reg21 = 80000;
-    	*slv_reg22 = 0 ;
-    	*slv_reg23 = 0;
-    	*slv_reg24 = 0;
-    	*slv_reg25 = 0;
-
+    	*LEDs = *SWs;
     }
 
     print("Hello World\n\r");

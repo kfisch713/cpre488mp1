@@ -36,3 +36,92 @@
 18:25:13.394 INFO  - Processor reset is completed for ps7_cortexa9_0 
 18:26:02.369 INFO  - Processor reset is completed for ps7_cortexa9_0 
 18:36:27.855 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:22:58.675 INFO  - Processing command line option -hwspec \\my.files.iastate.edu\users\kfisch13\Desktop\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+11:25:06.984 INFO  - FPGA configured successfully with bitstream "U:/Desktop/cpre488mp1/sw/system_hw_platform/system.bit" 
+11:26:16.474 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:26:16.584 INFO  - PS initialization will be done as it is not done before. 
+11:26:16.584 INFO  - Running PS initialization.... 
+11:26:17.075 INFO  - ps7_init is completed. 
+11:26:17.175 INFO  - ps7_post_config is completed. 
+11:26:17.285 INFO  - PS Initialization is complete. 
+11:29:06.178 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:29:08.483 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:29:27.085 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:30:54.564 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:31:32.863 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:32:32.856 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:33:03.406 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:33:14.945 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:33:18.156 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:33:56.029 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:35:00.747 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:35:46.511 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:36:22.588 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+11:36:24.282 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:31:18.361 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+12:31:18.373 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:31:44.378 INFO  - Processing command line option -hwspec \\my.files.iastate.edu\users\kfisch13\Desktop\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+12:37:23.757 INFO  - Processing command line option -hwspec \\my.files.iastate.edu\users\kfisch13\Desktop\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+12:37:55.703 INFO  - FPGA configured successfully with bitstream "U:/Desktop/cpre488mp1/sw/system_hw_platform/system.bit" 
+12:39:41.134 ERROR - SDK has detected that project system_hw_platform has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+12:39:49.157 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:40:04.153 INFO  - Processing command line option -hwspec \\my.files.iastate.edu\users\kfisch13\Desktop\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+12:41:14.516 INFO  - FPGA configured successfully with bitstream "U:/Desktop/cpre488mp1/sw/system_hw_platform/system.bit" 
+12:42:15.253 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:42:15.363 INFO  - PS initialization will be done as it is not done before. 
+12:42:15.363 INFO  - Running PS initialization.... 
+12:42:15.833 INFO  - ps7_init is completed. 
+12:42:15.933 INFO  - ps7_post_config is completed. 
+12:42:16.043 INFO  - PS Initialization is complete. 
+12:43:05.928 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:43:56.385 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:43:59.026 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:44:27.057 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:44:43.722 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:44:46.032 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:45:23.316 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:45:25.956 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:45:59.195 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:46:11.828 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:46:14.091 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:46:41.997 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+12:46:43.892 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:47:20.613 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:48:21.262 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:49:59.760 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:50:22.258 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:41:08.558 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+13:46:01.634 INFO  - Processing command line option -hwspec \\my.files.iastate.edu\users\kfisch13\Desktop\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+13:46:16.888 ERROR - SDK has detected that project system_hw_platform has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+13:46:33.352 INFO  - Processing command line option -hwspec \\my.files.iastate.edu\users\kfisch13\Desktop\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+13:47:34.037 INFO  - FPGA configured successfully with bitstream "U:/Desktop/cpre488mp1/sw/system_hw_platform/system.bit" 
+13:47:40.602 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:47:40.712 INFO  - PS initialization will be done as it is not done before. 
+13:47:40.712 INFO  - Running PS initialization.... 
+13:47:41.162 INFO  - ps7_init is completed. 
+13:47:41.262 INFO  - ps7_post_config is completed. 
+13:47:41.372 INFO  - PS Initialization is complete. 
+13:48:17.949 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+13:48:20.056 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:49:34.003 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:52:31.878 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:53:07.639 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+13:53:09.512 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:53:58.975 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+13:53:58.992 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+13:53:58.993 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 

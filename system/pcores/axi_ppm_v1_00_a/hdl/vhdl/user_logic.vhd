@@ -163,41 +163,41 @@ architecture IMP of user_logic is
   ------------------------------------------
   -- Signals for user logic slave model s/w accessible register example
   ------------------------------------------
-  signal slv_reg0                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg1                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg2                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg3                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg4                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg5                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg6                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg7                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg8                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg9                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg10                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg11                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg12                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg13                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg14                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg15                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg16                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg17                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg18                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg19                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg20                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg21                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg22                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg23                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg24                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg25                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg26                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg27                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg28                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg29                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg30                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
-  signal slv_reg31                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
+  signal slv_reg0                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg1                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg2                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg3                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg4                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg5                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg6                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg7                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg8                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg9                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg10                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg11                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg12                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg13                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg14                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg15                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg16                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg17                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg18                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg19                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg20                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg21                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg22                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg23                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg24                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg25                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg26                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg27                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg28                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg29                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg30                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg31                      : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
   signal slv_reg_write_sel              : std_logic_vector(31 downto 0);
   signal slv_reg_read_sel               : std_logic_vector(31 downto 0);
-  signal slv_ip2bus_data                : std_logic_vector(C_SLV_DWIDTH-1 downto 0);
+  signal slv_ip2bus_data                : std_logic_vector(C_SLV_DWIDTH-1 downto 0); 
   signal slv_read_ack                   : std_logic;
   signal slv_write_ack                  : std_logic;
 
@@ -228,6 +228,7 @@ begin
 	-- Frame counter in slv_reg1
 	process(frame_counter_increment)
 	begin
+		frame_counter <= frame_counter;
 		if(frame_counter_increment = '1') then
 			frame_counter <= frame_counter + 1;
 			slv_reg1 <= std_logic_vector(frame_counter);
@@ -235,7 +236,7 @@ begin
 	end process;
 	
 	-- Passthrough process
-	process(slv_reg0, ppm_input)
+	process(slv_reg0, ppm_input, ppm_output_from_reg)
 	begin
 		if (slv_reg0(0) = '0') then
 			ppm_output <= ppm_input;

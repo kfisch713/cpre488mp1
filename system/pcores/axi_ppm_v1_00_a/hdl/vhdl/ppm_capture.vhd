@@ -144,6 +144,14 @@ architecture ppm_capture_arch of ppm_capture is
 	--1. channel select mux
 	process(channel_mux_select, tmp_reg_0, tmp_reg_1, tmp_reg_2, tmp_reg_3, tmp_reg_4, tmp_reg_5, channel_mux_write)
 	begin
+	
+		tmp_reg_0 <= tmp_reg_0;
+		tmp_reg_1 <= tmp_reg_1;
+		tmp_reg_2 <= tmp_reg_2;
+		tmp_reg_3 <= tmp_reg_3;
+		tmp_reg_4 <= tmp_reg_4;
+		tmp_reg_5 <= tmp_reg_5;
+		
 		if(channel_mux_write = '1') then 
 			if(channel_mux_select = 0) then
 				tmp_reg_0 <= std_logic_vector(timer_counter);
@@ -177,6 +185,10 @@ architecture ppm_capture_arch of ppm_capture is
 	--3. Timer mux select
 	process(timer_mux_select, timer_counter_plus_one, timer_enable)
 	begin
+		
+		timer_reached_idle_state <= '0';
+		timer_counter <= timer_counter;
+		
 		if(timer_enable = '1') then
 			if(timer_mux_select = '1') then
 				timer_counter <= timer_counter_plus_one;
@@ -188,15 +200,18 @@ architecture ppm_capture_arch of ppm_capture is
 				timer_reached_idle_state <= '1';
 			else
 				timer_reached_idle_state <= '0';
-			end if;
-			
+			end if;	
 		end if;
+		
 	end process;
 	
 	
 	--4. Channel counter / the select for the channel mux
 	process(channel_counter_increment, channel_counter_reset)
 	begin
+	
+		channel_mux_select <= channel_mux_select;
+	
 		if(channel_counter_increment = '1') then
 			channel_mux_select <= unsigned(channel_mux_select) + 1;
 		end if;
@@ -207,15 +222,17 @@ architecture ppm_capture_arch of ppm_capture is
 	end process;
 	
 	--Frame is done. Write the buffers to output.
-	process(frame_done_write)
+	process(clk, frame_done_write)
 	begin
-		if(frame_done_write = '1') then
-			slv_reg10 <= tmp_reg_0;
-			slv_reg11 <= tmp_reg_1;
-			slv_reg12 <= tmp_reg_2;
-			slv_reg13 <= tmp_reg_3;
-			slv_reg14 <= tmp_reg_4;
-			slv_reg15 <= tmp_reg_5;
+		if rising_edge(clk) then 
+			if(frame_done_write = '1') then
+				slv_reg10 <= tmp_reg_0;
+				slv_reg11 <= tmp_reg_1;
+				slv_reg12 <= tmp_reg_2;
+				slv_reg13 <= tmp_reg_3;
+				slv_reg14 <= tmp_reg_4;
+				slv_reg15 <= tmp_reg_5;
+			end if;
 		end if;
 	end process;
 	

@@ -7,7 +7,7 @@ C:\Xilinx\14.7\ISE_DS\ISE\;C:\Xilinx\14.7\ISE_DS\EDK.
    "system" is an NCD, version 3.2, device xc7z020, package clg484, speed -1
 Opened constraints file system.pcf.
 
-Thu Feb 09 17:26:14 2017
+Fri Feb 10 13:45:28 2017
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -w system.ncd 
 
@@ -93,7 +93,7 @@ There were 0 CONFIG constraint(s) processed from system.pcf.
 
 Running DRC.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03291 is sourced by a
+   axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net

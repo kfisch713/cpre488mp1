@@ -123,7 +123,7 @@ C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/h
 C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/slave_attachment.vhd \
 C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_01_a/hdl/vhdl/axi_lite_ipif.vhd \
 pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_capture.vhd \
-pcores/axi_ppm_v1_00_a/hdl/vhdl/PPM_generate.vhd \
+pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_generate.vhd \
 pcores/axi_ppm_v1_00_a/hdl/vhdl/user_logic.vhd \
 pcores/axi_ppm_v1_00_a/hdl/vhdl/axi_ppm.vhd
 

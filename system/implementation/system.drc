@@ -1,12 +1,12 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu Feb 09 17:26:14 2017
+Fri Feb 10 13:45:28 2017
 
 drc -z system.ncd system.pcf
 
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03291 is sourced by a
+   axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net

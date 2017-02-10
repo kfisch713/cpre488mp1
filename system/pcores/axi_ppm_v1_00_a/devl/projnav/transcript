@@ -16,7 +16,7 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # ** Warning: (vlib-34) Library already exists at "axi_ppm_v1_00_a".
 # Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
-# Start time: 18:28:14 on Feb 09,2017
+# Start time: 13:36:55 on Feb 10,2017
 # vcom -reportprogress 300 -explicit -93 -work axi_ppm_v1_00_a ../../hdl/vhdl/ppm_capture.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -24,11 +24,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ppm_capture
 # -- Compiling architecture ppm_capture_arch of ppm_capture
-# End time: 18:28:14 on Feb 09,2017, Elapsed time: 0:00:00
+# End time: 13:36:56 on Feb 10,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # ** Warning: (vlib-34) Library already exists at "axi_ppm_v1_00_a".
 # Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
-# Start time: 18:28:14 on Feb 09,2017
+# Start time: 13:36:56 on Feb 10,2017
 # vcom -reportprogress 300 -explicit -93 -work axi_ppm_v1_00_a ../../../../../PPM_generate.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -36,11 +36,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ppm_generate
 # -- Compiling architecture ppm_generate_arch of ppm_generate
-# End time: 18:28:14 on Feb 09,2017, Elapsed time: 0:00:00
+# End time: 13:36:56 on Feb 10,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # ** Warning: (vlib-34) Library already exists at "proc_common_v3_00_a".
 # Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
-# Start time: 18:28:15 on Feb 09,2017
+# Start time: 13:36:56 on Feb 10,2017
 # vcom -reportprogress 300 -explicit -93 -work proc_common_v3_00_a C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -50,11 +50,11 @@
 # -- Compiling package proc_common_pkg
 # -- Compiling package body proc_common_pkg
 # -- Loading package proc_common_pkg
-# End time: 18:28:15 on Feb 09,2017, Elapsed time: 0:00:00
+# End time: 13:36:56 on Feb 10,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # ** Warning: (vlib-34) Library already exists at "axi_ppm_v1_00_a".
 # Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
-# Start time: 18:28:15 on Feb 09,2017
+# Start time: 13:36:56 on Feb 10,2017
 # vcom -reportprogress 300 -explicit -93 -work axi_ppm_v1_00_a ../../hdl/vhdl/user_logic.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -64,11 +64,11 @@
 # -- Loading package proc_common_pkg
 # -- Compiling entity user_logic
 # -- Compiling architecture IMP of user_logic
-# End time: 18:28:15 on Feb 09,2017, Elapsed time: 0:00:00
+# End time: 13:36:56 on Feb 10,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -lib work axi_ppm_v1_00_a.user_logic 
-# Start time: 18:28:15 on Feb 09,2017
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Start time: 13:36:56 on Feb 10,2017
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -81,9 +81,9 @@
 # Loading axi_ppm_v1_00_a.ppm_generate(ppm_generate_arch)#1
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: kacao  Hostname: CO2041-15  ProcessID: 70408
-#           Attempting to use alternate WLF file "./wlftr86i4w".
+#           Attempting to use alternate WLF file "./wlftjnqvzz".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftr86i4w
+#           Using alternate file: ./wlftjnqvzz
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
@@ -105,83 +105,16 @@
 #    Time: 0 ps  Iteration: 0  Instance: /user_logic/our_generate
 # ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 1  Instance: /user_logic/our_capture
-quit -sim
-# End time: 18:28:22 on Feb 09,2017, Elapsed time: 0:00:07
-# Errors: 0, Warnings: 11
-vsim work.ppm_generate
-# vsim work.ppm_generate 
-# Start time: 18:28:25 on Feb 09,2017
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.ppm_generate(ppm_generate_arch)#1
-add wave -position end  sim:/ppm_generate/clk
-add wave -position end  sim:/ppm_generate/slv_reg20
-add wave -position end  sim:/ppm_generate/slv_reg21
-add wave -position end  sim:/ppm_generate/slv_reg22
-add wave -position end  sim:/ppm_generate/slv_reg23
-add wave -position end  sim:/ppm_generate/slv_reg24
-add wave -position end  sim:/ppm_generate/slv_reg25
-add wave -position end  sim:/ppm_generate/ppm_output
-add wave -position end  sim:/ppm_generate/slv_reg_data
-add wave -position end  sim:/ppm_generate/slv_reg_data_minus1
-add wave -position end  sim:/ppm_generate/low_counter_data
-add wave -position end  sim:/ppm_generate/channel_mux_output
-add wave -position end  sim:/ppm_generate/low_counter_data_minus1
-add wave -position end  sim:/ppm_generate/timer_20_ms
-add wave -position end  sim:/ppm_generate/channel_select_reset
-add wave -position end  sim:/ppm_generate/slv_reg_select
-add wave -position end  sim:/ppm_generate/low_counter_select
-add wave -position end  sim:/ppm_generate/channel_select_write_enable
-add wave -position end  sim:/ppm_generate/ppm_to_low
-add wave -position end  sim:/ppm_generate/ppm_to_high
-add wave -position end  sim:/ppm_generate/channel_select
-add wave -position end  sim:/ppm_generate/PS
-add wave -position end  sim:/ppm_generate/NS
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: kacao  Hostname: CO2041-15  ProcessID: 70408
-#           Attempting to use alternate WLF file "./wlftgkk38c".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftgkk38c
-force -freeze sim:/ppm_generate/clk 1 0, 0 {5000 ps} -r 10000
-force -freeze sim:/ppm_generate/slv_reg20 800000 0
-force -freeze sim:/ppm_generate/slv_reg21 800000 0
-force -freeze sim:/ppm_generate/slv_reg22 800000 0
-force -freeze sim:/ppm_generate/slv_reg23 800000 0
-force -freeze sim:/ppm_generate/slv_reg24 1 0
-force -freeze sim:/ppm_generate/slv_reg25 1 0
-force -freeze sim:/ppm_generate/slv_reg23 200000 0
-force -freeze sim:/ppm_generate/slv_reg22 400000 0
-run
 # ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /ppm_generate
+#    Time: 0 ps  Iteration: 4  Instance: /user_logic/our_generate
+force -freeze sim:/user_logic/Bus2IP_Clk 1 0, 0 {5000 ps} -r 10000
+force -freeze sim:/user_logic/slv_reg20 186a0 0
+force -freeze sim:/user_logic/slv_reg21 186a0 0
+force -freeze sim:/user_logic/slv_reg22 186a0 0
+force -freeze sim:/user_logic/slv_reg23 186a0 0
+force -freeze sim:/user_logic/slv_reg24 186a0 0
+force -freeze sim:/user_logic/slv_reg25 186a0 0
+force -freeze sim:/user_logic/slv_reg0 1 0
 run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# End time: 18:35:48 on Feb 09,2017, Elapsed time: 0:07:23
-# Errors: 0, Warnings: 10
+# End time: 13:40:48 on Feb 10,2017, Elapsed time: 0:03:52
+# Errors: 0, Warnings: 12

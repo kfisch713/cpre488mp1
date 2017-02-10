@@ -35,7 +35,7 @@
 #include "platform.h"
 #include <xparameters.h>
 
-// XPAR_AXI_PPM_0_BASEADDR
+#define SLV_REG(x) ((XPAR_AXI_PPM_0_BASEADDR) + (x * 4))
 
 void print(char *str);
 
@@ -47,8 +47,44 @@ int main()
     volatile char *LEDs = XPAR_LEDS_8BITS_BASEADDR;
     volatile char *SWs = XPAR_SWS_8BITS_BASEADDR;
 
-    while(1){
+    volatile int *slv_reg0 = SLV_REG(0);
+    volatile int *slv_reg10 = SLV_REG(10);
+    volatile int *slv_reg11 = SLV_REG(11);
+    volatile int *slv_reg12 = SLV_REG(12);
+    volatile int *slv_reg13 = SLV_REG(13);
+    volatile int *slv_reg14 = SLV_REG(14);
+    volatile int *slv_reg15 = SLV_REG(15);
+
+    volatile int *slv_reg20 = SLV_REG(20);
+	volatile int *slv_reg21 = SLV_REG(21);
+	volatile int *slv_reg22 = SLV_REG(22);
+	volatile int *slv_reg23 = SLV_REG(23);
+	volatile int *slv_reg24 = SLV_REG(24);
+	volatile int *slv_reg25 = SLV_REG(25);
+
+	//1 == software, 0 == hardware
+	*slv_reg0 = 1;
+
+	/*
+    //capture
+    while(!(*SWs & 0x8)){
     	*LEDs = *SWs;
+    	*slv_reg0 = 0;
+
+    	printf("%d\n", *slv_reg10);
+    	fflush(stdout);
+
+    }
+    */
+
+    //generate
+    while(!(*SWs & 0x8)){
+    	*slv_reg20 = 0x100;
+    	*slv_reg21 = 0x100;
+    	*slv_reg22 = 0xFF6a0;
+    	*slv_reg23 = 0x100;
+    	*slv_reg24 = 0x100;
+    	*slv_reg25 = 0x100;
 
     }
 

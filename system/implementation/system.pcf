@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Thu Feb 09 17:25:08 2017
+// Written by: Map P.20131013 on Fri Feb 10 13:44:24 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -1040,6 +1040,166 @@ TIMEGRP clk_fpga_0 = BEL
         "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd5" BEL
         "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd3" BEL
         "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd6" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_31" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_30" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_29" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_28" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_27" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_26" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_25" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_24" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_23" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_22" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_21" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_20" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_19" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_18" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_17" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_16" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_15" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_14" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_13" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_12" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_11" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_10" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_9" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_8" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_7" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_6" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_5" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_4" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_3" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_2" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_1" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg15_0" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_31" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_30" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_29" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_28" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_27" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_26" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_25" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_24" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_23" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_22" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_21" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_20" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_19" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_18" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_17" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_16" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_15" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_14" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_13" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_12" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_11" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_10" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_9" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_8" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_7" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_6" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_5" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_4" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_3" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_2" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_1" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg14_0" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_31" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_30" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_29" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_28" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_27" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_26" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_25" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_24" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_23" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_22" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_21" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_20" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_19" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_18" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_17" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_16" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_15" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_14" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_13" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_12" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_11" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_10" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_9" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_8" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_7" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_6" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_5" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_4" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_3" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_2" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_1" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg13_0" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_31" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_30" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_29" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_28" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_27" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_26" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_25" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_24" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_23" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_22" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_21" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_20" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_19" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_18" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_17" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_16" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_15" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_14" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_13" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_12" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_11" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_10" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_9" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_8" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_7" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_6" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_5" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_4" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_3" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_2" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_1" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg12_0" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_31" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_30" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_29" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_28" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_27" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_26" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_25" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_24" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_23" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_22" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_21" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_20" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_19" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_18" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_17" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_16" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_15" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_14" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_13" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_12" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_11" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_10" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_9" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_8" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_7" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_6" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_5" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_4" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_3" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_2" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_1" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg10_0" BEL
         "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_counter_plus_one_31"
         BEL
         "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_counter_plus_one_30"
@@ -1103,7 +1263,39 @@ TIMEGRP clk_fpga_0 = BEL
         "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_counter_plus_one_1"
         BEL
         "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/timer_counter_plus_one_0"
-        BEL "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_20" BEL
+        BEL "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_31" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_30" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_29" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_28" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_27" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_26" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_25" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_24" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_23" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_22" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_21" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_20" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_19" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_18" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_17" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_16" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_15" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_14" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_13" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_12" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_11" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_10" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_9" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_8" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_7" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_6" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_5" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_4" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_3" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_2" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_1" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_capture/slv_reg11_0" BEL
+        "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_20" BEL
         "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_19" BEL
         "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_18" BEL
         "axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_17" BEL

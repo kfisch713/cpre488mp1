@@ -92,9 +92,7 @@
       <SET ID="S_AXI" IS_EXPANDED="TRUE"/>
     </SET>
     <STATUS>
-      <SELECTIONS>
-        <VARIABLE ID="S_AXI_AWADDR" INSTANCE="axi_ppm_0" PARENT="S_AXI"/>
-      </SELECTIONS>
+      <SELECTIONS/>
     </STATUS>
     <SEQUENCES IS_DEF_SEQUENCES="TRUE">
       <VARIABLE ID="ExternalPorts" IS_EXPANDED="TRUE" ROW_INDEX="0"/>
