@@ -345,6 +345,8 @@ begin
     (
       -- MAP USER PORTS BELOW THIS LINE ------------------
       --USER ports mapped here
+		PPM_INPUT							  => PPM_INPUT,
+		PPM_OUTPUT							  => PPM_OUTPUT,
       -- MAP USER PORTS ABOVE THIS LINE ------------------
 
       Bus2IP_Clk                     => ipif_Bus2IP_Clk,

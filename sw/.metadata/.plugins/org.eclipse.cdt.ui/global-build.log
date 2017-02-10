@@ -1,0 +1,862 @@
+17:57:52 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:6: error: invalid type argument of unary '*' (have 'int')
+make: *** [src/helloworld.o] Error 1
+17:59:08 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:49:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22616	   1096	  29780	  53492	   d0f4	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+17:59:24 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:00:38 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:49:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22616	   1096	  29780	  53492	   d0f4	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:00:43 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:05:24 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62396	   2264	  29852	  94512	  17130	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:05:37 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:09:02 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62424	   2264	  29852	  94540	  1714c	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:09:24 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:10:15 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:11:25 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62532	   2264	  29852	  94648	  171b8	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:11:31 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:15:04 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  62724	   2264	  29852	  94840	  17278	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:15:13 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+../src/helloworld.c:51:19: warning: unused variable 'slv_reg10' [-Wunused-variable]
+../src/helloworld.c:50:19: warning: unused variable 'slv_reg0' [-Wunused-variable]
+../src/helloworld.c:47:20: warning: unused variable 'LEDs' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23184	   1096	  29780	  54060	   d32c	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:15:17 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:15:59 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+../src/helloworld.c:51:19: warning: unused variable 'slv_reg10' [-Wunused-variable]
+../src/helloworld.c:47:20: warning: unused variable 'LEDs' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23196	   1096	  29780	  54072	   d338	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:16:05 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+../src/helloworld.c:51:19: warning: unused variable 'slv_reg10' [-Wunused-variable]
+../src/helloworld.c:47:20: warning: unused variable 'LEDs' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23196	   1096	  29780	  54072	   d338	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:16:17 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+../src/helloworld.c:51:19: warning: unused variable 'slv_reg10' [-Wunused-variable]
+../src/helloworld.c:47:20: warning: unused variable 'LEDs' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23196	   1096	  29780	  54072	   d338	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:16:19 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:17:12 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+../src/helloworld.c:51:19: warning: unused variable 'slv_reg10' [-Wunused-variable]
+../src/helloworld.c:47:20: warning: unused variable 'LEDs' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23172	   1096	  29780	  54048	   d320	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:17:17 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:18:08 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:18:26 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+../src/helloworld.c:51:19: warning: unused variable 'slv_reg10' [-Wunused-variable]
+../src/helloworld.c:47:20: warning: unused variable 'LEDs' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23172	   1096	  29780	  54048	   d320	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:18:29 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:19:55 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+../src/helloworld.c:51:19: warning: unused variable 'slv_reg10' [-Wunused-variable]
+../src/helloworld.c:47:20: warning: unused variable 'LEDs' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23176	   1096	  29780	  54052	   d324	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:19:59 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:20:48 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+../src/helloworld.c:51:19: warning: unused variable 'slv_reg10' [-Wunused-variable]
+../src/helloworld.c:47:20: warning: unused variable 'LEDs' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23196	   1096	  29780	  54072	   d338	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:20:52 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:22:31 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+../src/helloworld.c:51:19: warning: unused variable 'slv_reg10' [-Wunused-variable]
+../src/helloworld.c:47:20: warning: unused variable 'LEDs' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23192	   1096	  29780	  54068	   d334	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:22:33 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:23:45 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+../src/helloworld.c:51:19: warning: unused variable 'slv_reg10' [-Wunused-variable]
+../src/helloworld.c:47:20: warning: unused variable 'LEDs' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23192	   1096	  29780	  54068	   d334	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:23:47 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:24:20 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+../src/helloworld.c:51:19: warning: unused variable 'slv_reg10' [-Wunused-variable]
+../src/helloworld.c:47:20: warning: unused variable 'LEDs' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23176	   1096	  29780	  54052	   d324	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:24:22 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:25:07 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+../src/helloworld.c:51:19: warning: unused variable 'slv_reg10' [-Wunused-variable]
+../src/helloworld.c:47:20: warning: unused variable 'LEDs' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23176	   1096	  29780	  54052	   d324	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:25:10 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:25:53 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+../src/helloworld.c:51:19: warning: unused variable 'slv_reg10' [-Wunused-variable]
+../src/helloworld.c:47:20: warning: unused variable 'LEDs' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23176	   1096	  29780	  54052	   d324	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:25:59 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+18:26:47 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+../src/helloworld.c:51:19: warning: unused variable 'slv_reg10' [-Wunused-variable]
+../src/helloworld.c:47:20: warning: unused variable 'LEDs' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23176	   1096	  29780	  54052	   d324	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+18:36:24 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:30: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:52:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:31: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:59:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:60:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:61:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:62:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:63:28: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:19: warning: unused variable 'slv_reg15' [-Wunused-variable]
+../src/helloworld.c:55:19: warning: unused variable 'slv_reg14' [-Wunused-variable]
+../src/helloworld.c:54:19: warning: unused variable 'slv_reg13' [-Wunused-variable]
+../src/helloworld.c:53:19: warning: unused variable 'slv_reg12' [-Wunused-variable]
+../src/helloworld.c:52:19: warning: unused variable 'slv_reg11' [-Wunused-variable]
+../src/helloworld.c:51:19: warning: unused variable 'slv_reg10' [-Wunused-variable]
+../src/helloworld.c:47:20: warning: unused variable 'LEDs' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23176	   1096	  29780	  54052	   d324	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '

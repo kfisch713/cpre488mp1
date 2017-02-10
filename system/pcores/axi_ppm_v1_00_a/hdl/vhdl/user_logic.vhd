@@ -98,6 +98,8 @@ entity user_logic is
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
     --USER ports added here
+		PPM_INPUT : in std_logic;
+	    PPM_OUTPUT : out std_logic;
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -130,6 +132,33 @@ end entity user_logic;
 architecture IMP of user_logic is
 
   --USER signal declarations added here, as needed for user logic
+  Component ppm_capture is
+	port( clk : in std_logic;
+		  ppm_input : in std_logic;
+		  slv_reg10 : out std_logic_vector(31 downto 0);
+		  slv_reg11 : out std_logic_vector(31 downto 0);
+		  slv_reg12 : out std_logic_vector(31 downto 0);
+		  slv_reg13 : out std_logic_vector(31 downto 0);
+		  slv_reg14 : out std_logic_vector(31 downto 0);
+		  slv_reg15 : out std_logic_vector(31 downto 0);
+		  frame_done : out std_logic );
+	end component;
+	
+	component ppm_generate is 
+		port( clk : in std_logic;
+			  slv_reg20 : in std_logic_vector(31 downto 0);
+			  slv_reg21 : in std_logic_vector(31 downto 0);
+			  slv_reg22 : in std_logic_vector(31 downto 0);
+			  slv_reg23 : in std_logic_vector(31 downto 0);
+			  slv_reg24 : in std_logic_vector(31 downto 0);
+			  slv_reg25 : in std_logic_vector(31 downto 0);
+			  ppm_output : out std_logic );
+	end component;
+	
+	signal frame_counter : unsigned(31 downto 0) := (others => '0');
+	signal frame_counter_increment: std_logic;
+	signal ppm_output_from_reg : std_logic;
+  
 
   ------------------------------------------
   -- Signals for user logic slave model s/w accessible register example
@@ -175,7 +204,45 @@ architecture IMP of user_logic is
 begin
 
   --USER logic implementation added here
-
+	our_capture : ppm_capture 
+		port map( clk => Bus2IP_Clk,
+				  ppm_input => ppm_input,
+				  slv_reg10 => slv_reg10,
+				  slv_reg11 => slv_reg11,
+				  slv_reg12 => slv_reg12,
+				  slv_reg13 => slv_reg13,
+				  slv_reg14 => slv_reg14,
+				  slv_reg15 => slv_reg15,
+				  frame_done => frame_counter_increment);
+				  
+	our_generate : ppm_generate
+		port map( clk 		=> Bus2IP_Clk,
+		          slv_reg20 => slv_reg20,
+		          slv_reg21 => slv_reg21,
+		          slv_reg22 => slv_reg22,
+		          slv_reg23 => slv_reg23,
+		          slv_reg24 => slv_reg24,
+		          slv_reg25 => slv_reg25,
+		          ppm_output => ppm_output_from_reg);
+	
+	-- Frame counter in slv_reg1
+	process(frame_counter_increment)
+	begin
+		if(frame_counter_increment = '1') then
+			frame_counter <= frame_counter + 1;
+			slv_reg1 <= std_logic_vector(frame_counter);
+		end if;
+	end process;
+	
+	-- Passthrough process
+	process(slv_reg0, ppm_input)
+	begin
+		if (slv_reg0(0) = '0') then
+			ppm_output <= ppm_input;
+		else
+			ppm_output <= ppm_output_from_reg;
+		end if;
+	end process;
   ------------------------------------------
   -- Example code to read/write user logic slave model s/w accessible registers
   -- 
@@ -206,7 +273,7 @@ begin
     if Bus2IP_Clk'event and Bus2IP_Clk = '1' then
       if Bus2IP_Resetn = '0' then
         slv_reg0 <= (others => '0');
-        slv_reg1 <= (others => '0');
+        --slv_reg1 <= (others => '0');
         slv_reg2 <= (others => '0');
         slv_reg3 <= (others => '0');
         slv_reg4 <= (others => '0');
@@ -215,12 +282,12 @@ begin
         slv_reg7 <= (others => '0');
         slv_reg8 <= (others => '0');
         slv_reg9 <= (others => '0');
-        slv_reg10 <= (others => '0');
-        slv_reg11 <= (others => '0');
-        slv_reg12 <= (others => '0');
-        slv_reg13 <= (others => '0');
-        slv_reg14 <= (others => '0');
-        slv_reg15 <= (others => '0');
+        --slv_reg10 <= (others => '0');
+        --slv_reg11 <= (others => '0');
+        --slv_reg12 <= (others => '0');
+        --slv_reg13 <= (others => '0');
+        --slv_reg14 <= (others => '0');
+        --slv_reg15 <= (others => '0');
         slv_reg16 <= (others => '0');
         slv_reg17 <= (others => '0');
         slv_reg18 <= (others => '0');
@@ -248,7 +315,7 @@ begin
           when "01000000000000000000000000000000" =>
             for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
               if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg1(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
+                --slv_reg1(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
               end if;
             end loop;
           when "00100000000000000000000000000000" =>
@@ -302,37 +369,37 @@ begin
           when "00000000001000000000000000000000" =>
             for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
               if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg10(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
+                --slv_reg10(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
               end if;
             end loop;
           when "00000000000100000000000000000000" =>
             for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
               if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg11(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
+                --slv_reg11(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
               end if;
             end loop;
           when "00000000000010000000000000000000" =>
             for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
               if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg12(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
+                --slv_reg12(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
               end if;
             end loop;
           when "00000000000001000000000000000000" =>
             for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
               if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg13(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
+                --slv_reg13(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
               end if;
             end loop;
           when "00000000000000100000000000000000" =>
             for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
               if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg14(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
+                --slv_reg14(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
               end if;
             end loop;
           when "00000000000000010000000000000000" =>
             for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
               if ( Bus2IP_BE(byte_index) = '1' ) then
-                slv_reg15(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
+                --slv_reg15(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
               end if;
             end loop;
           when "00000000000000001000000000000000" =>

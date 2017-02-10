@@ -1,0 +1,24 @@
+17:48:30 **** Auto Build of configuration Debug for project mp_2 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:44:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:45:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: mp_2.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "mp_2.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: mp_2.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size mp_2.elf  |tee "mp_2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22592	   1096	  29780	  53468	   d0dc	mp_2.elf
+'Finished building: mp_2.elf.size'
+' '
+
+17:48:31 Build Finished (took 1s.20ms)
+
