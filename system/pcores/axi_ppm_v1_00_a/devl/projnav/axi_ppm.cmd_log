@@ -3,3 +3,26 @@ xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/de
 xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
 xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
 xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z020-clg484-1 axi_ppm.ngc axi_ppm.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o axi_ppm_map.ncd axi_ppm.ngd axi_ppm.pcf 
+par -w -intstyle ise -ol high -mt off axi_ppm_map.ncd axi_ppm.ncd axi_ppm.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml axi_ppm.twx axi_ppm.ncd -o axi_ppm.twr axi_ppm.pcf 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 
+xst -intstyle ise -ifn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.xst" -ofn "U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/axi_ppm.syr" 

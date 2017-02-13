@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-02-12T21:58:29</DateModified>
+  <DateModified>2017-02-13T13:06:50</DateModified>
   <ModuleName>axi_ppm</ModuleName>
-  <SummaryTimeStamp>2017-02-12T21:50:30</SummaryTimeStamp>
+  <SummaryTimeStamp>2017-02-13T12:16:43</SummaryTimeStamp>
   <SavedFilePath>U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/iseconfig/axi_ppm.xreport</SavedFilePath>
   <ImplementationReportsDirectory>U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav\</ImplementationReportsDirectory>
   <DateInitialized>2017-02-02T16:58:34</DateInitialized>

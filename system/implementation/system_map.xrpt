@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Sun Feb 12 22:23:50 2017">
+  <application stringID="Map" timeStamp="Mon Feb 13 13:53:30 2017">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -39,7 +39,7 @@
         <item stringID="User_EnvOsname" value="Microsoft , 64-bit"/>
         <item stringID="User_EnvOsrelease" value="major release  (build 9200)"/>
       </item>
-      <item stringID="User_EnvHost" value="co2041-14"/>
+      <item stringID="User_EnvHost" value="co2041-15"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
@@ -111,8 +111,8 @@
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="8"/>
         <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="923284"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="37 secs "/>
-        <item stringID="MAP_TOTAL_CPU_TIME" value="34 secs "/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="40 secs "/>
+        <item stringID="MAP_TOTAL_CPU_TIME" value="35 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">
         <item AVAILABLE="106400" dataType="int" label="Number of Slice Registers" stringID="MAP_SLICE_REGISTERS" value="1813">

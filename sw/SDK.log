@@ -372,3 +372,54 @@ Could not detect MDM peripheral on hardware. Please check:
 	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
 
 23:08:08.456 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+11:46:17.887 INFO  - Processing command line option -hwspec C:\Users\burneykb\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+11:46:19.653 INFO  - The hardware specification for project 'system_hw_platform' is different from C:\Users\burneykb\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+11:46:20.263 INFO  - Copied contents of C:\Users\burneykb\cpre488mp1\system\SDK\SDK_Export\hw\system.xml into \system_hw_platform\system.xml. 
+11:46:20.593 INFO  - Copied contents of C:\Users\burneykb\cpre488mp1\system\SDK\SDK_Export\hw\system.bit into \system_hw_platform\system.bit. 
+11:47:51.395 INFO  - Copied contents of C:\Users\burneykb\cpre488mp1\system\SDK\SDK_Export\hw\ps7_init.c into \system_hw_platform\ps7_init.c. 
+11:47:51.405 INFO  - Copied contents of C:\Users\burneykb\cpre488mp1\system\SDK\SDK_Export\hw\ps7_init.h into \system_hw_platform\ps7_init.h. 
+11:47:51.465 INFO  - Copied contents of C:\Users\burneykb\cpre488mp1\system\SDK\SDK_Export\hw\ps7_init.html into \system_hw_platform\ps7_init.html. 
+11:47:51.485 INFO  - Copied contents of C:\Users\burneykb\cpre488mp1\system\SDK\SDK_Export\hw\ps7_init.tcl into \system_hw_platform\ps7_init.tcl. 
+11:47:51.825 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+11:47:54.281 INFO  - Updating hardware inferred compiler options for rc_control. 
+11:47:54.311 INFO  - Clearing existing target manager status. 
+11:47:56.563 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+11:54:49.122 INFO  - FPGA configured successfully with bitstream "U:/Documents/cpre488mp1/sw/system_hw_platform/system.bit" 
+11:59:07.386 INFO  - Processor reset is completed for ps7_cortexa9_0 
+11:59:07.496 INFO  - PS initialization will be done as it is not done before. 
+11:59:07.496 INFO  - Running PS initialization.... 
+11:59:07.946 INFO  - ps7_init is completed. 
+11:59:08.056 INFO  - ps7_post_config is completed. 
+11:59:08.156 INFO  - PS Initialization is complete. 
+12:17:25.912 ERROR - SDK has detected that project system_hw_platform has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+12:17:32.279 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+12:21:28.818 INFO  - Processing command line option -hwspec C:\Users\burneykb\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+12:25:11.452 INFO  - FPGA configured successfully with bitstream "U:/Documents/cpre488mp1/sw/system_hw_platform/system.bit" 
+12:25:24.525 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:54:23.239 INFO  - FPGA configured successfully with bitstream "U:/Documents/cpre488mp1/sw/system_hw_platform/system.bit" 
+12:55:40.387 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:56:57.425 INFO  - FPGA configured successfully with bitstream "U:/Documents/cpre488mp1/sw/system_hw_platform/system.bit" 
+13:33:37.377 ERROR - SDK has detected that project system_hw_platform has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+13:33:42.816 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+13:34:47.933 INFO  - Processing command line option -hwspec \\my.files.iastate.edu\users\burneykb\Documents\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+13:37:12.840 INFO  - FPGA configured successfully with bitstream "U:/Documents/cpre488mp1/sw/system_hw_platform/system.bit" 
+13:40:30.194 ERROR - SDK has detected that project system_hw_platform has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+13:40:36.502 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+13:58:25.069 INFO  - Processing command line option -hwspec \\my.files.iastate.edu\users\burneykb\Documents\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+13:59:06.162 INFO  - FPGA configured successfully with bitstream "U:/Documents/cpre488mp1/sw/system_hw_platform/system.bit" 
+14:00:00.015 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:00:00.125 INFO  - PS initialization will be done as it is not done before. 
+14:00:00.125 INFO  - Running PS initialization.... 
+14:00:00.604 INFO  - ps7_init is completed. 
+14:00:00.704 INFO  - ps7_post_config is completed. 
+14:00:00.814 INFO  - PS Initialization is complete. 
+14:01:29.721 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

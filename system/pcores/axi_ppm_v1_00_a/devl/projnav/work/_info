@@ -1,0 +1,19 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dU:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav
+T_opt
+!s110 1487007230
+Va<m7O69b9Z22mc42:JG3T1
+015 10 3 axi_ppm_v1_00_a user_logic imp 1
+=1-484d7ed43b08-58a1edfd-347-1b6b0
+o-quiet -auto_acc_if_foreign -work work +acc
+tCvgOpt 0
+n@_opt
+OL;O;10.5b;63

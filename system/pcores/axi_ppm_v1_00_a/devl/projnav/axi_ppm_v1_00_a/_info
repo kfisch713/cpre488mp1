@@ -7,37 +7,37 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dU:/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav
+dU:/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav
 Eppm_capture
-Z1 w1486941169
-Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-R0
+Z0 w1487005590
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dU:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav
 Z5 8../../hdl/vhdl/ppm_capture.vhd
 Z6 F../../hdl/vhdl/ppm_capture.vhd
 l0
 L6
-VKIA3XP3EgSGa_bPmII3om2
+ViSDRCU;jHKLW0ACOURM470
 !s100 jCJ9jLXY=GWeZ1:6dN6k83
 Z7 OL;C;10.5b;63
 31
-Z8 !s110 1486943551
+Z8 !s110 1487007228
 !i10b 1
-Z9 !s108 1486943551.000000
+Z9 !s108 1487007228.000000
 Z10 !s90 -reportprogress|300|-explicit|-93|-work|axi_ppm_v1_00_a|../../hdl/vhdl/ppm_capture.vhd|
 Z11 !s107 ../../hdl/vhdl/ppm_capture.vhd|
 !i113 0
 Z12 o-explicit -93 -work axi_ppm_v1_00_a
-Z13 tExplicit 1 CvgOpt 0
+Z13 tOptimize_1164 0 Explicit 1 NoVital 1 NoCoverage 1 CvgOpt 0
 Appm_capture_arch
+R1
 R2
 R3
-R4
-DEx4 work 11 ppm_capture 0 22 KIA3XP3EgSGa_bPmII3om2
+DEx4 work 11 ppm_capture 0 22 iSDRCU;jHKLW0ACOURM470
 l33
 L18
-Vc<=;[Eo[`DeEalSS];mh52
+VfZ<UilU:Sj5UEl5<BZ1X32
 !s100 e<fXYERjhbf]QC9l1oi@k2
 R7
 31
@@ -50,84 +50,84 @@ R11
 R12
 R13
 Eppm_generate
-Z14 w1486941242
+Z14 w1487005579
+R1
 R2
 R3
 R4
-R0
 Z15 8../../../../../PPM_generate.vhdl
 Z16 F../../../../../PPM_generate.vhdl
 l0
 L6
-VGJ;jUfe8W]zl08M2fYz3g3
+Vb3zkl^6l`>Tl@ENK?@`Re0
 !s100 m_0_GW[XURhbg5]@NS7lU1
 R7
 31
-R8
+Z17 !s110 1487007229
 !i10b 1
 R9
-Z17 !s90 -reportprogress|300|-explicit|-93|-work|axi_ppm_v1_00_a|../../../../../PPM_generate.vhdl|
-Z18 !s107 ../../../../../PPM_generate.vhdl|
+Z18 !s90 -reportprogress|300|-explicit|-93|-work|axi_ppm_v1_00_a|../../../../../PPM_generate.vhdl|
+Z19 !s107 ../../../../../PPM_generate.vhdl|
 !i113 0
 R12
 R13
 Appm_generate_arch
+R1
 R2
 R3
-R4
-DEx4 work 12 ppm_generate 0 22 GJ;jUfe8W]zl08M2fYz3g3
+DEx4 work 12 ppm_generate 0 22 b3zkl^6l`>Tl@ENK?@`Re0
 l33
 L17
-VhDGdFT@5DUA?gZ^1[?mBm2
+V2OC5fzf6QVl;X32eT:TW43
 !s100 HD9Hj6fm=?Q5H[:MSX``O3
 R7
 31
-R8
+R17
 !i10b 1
 R9
-R17
 R18
+R19
 !i113 0
 R12
 R13
 Euser_logic
-Z19 w1486941679
-Z20 DPx19 proc_common_v3_00_a 15 proc_common_pkg 0 22 FlQCZBP_k1a>=X]UZh6D=2
-Z21 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z22 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z20 w1487007222
+Z21 DPx19 proc_common_v3_00_a 15 proc_common_pkg 0 22 7TZ>LTKWo;N5dYT:Q_I9^3
+Z22 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z23 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R2
 R3
 R4
-R0
-Z23 8../../hdl/vhdl/user_logic.vhd
-Z24 F../../hdl/vhdl/user_logic.vhd
+Z24 8../../hdl/vhdl/user_logic.vhd
+Z25 F../../hdl/vhdl/user_logic.vhd
 l0
 L84
-V9Q;=ebYE2bA@5ZI<]ZI=o0
+V`bLQWWT?G=c^V^ldECZ]c1
 !s100 CYAQLokY6DkbS=mOJLcmU0
 R7
 31
-Z25 !s110 1486943552
+R17
 !i10b 1
-Z26 !s108 1486943552.000000
+Z26 !s108 1487007229.000000
 Z27 !s90 -reportprogress|300|-explicit|-93|-work|axi_ppm_v1_00_a|../../hdl/vhdl/user_logic.vhd|
 Z28 !s107 ../../hdl/vhdl/user_logic.vhd|
 !i113 0
 R12
 R13
 Aimp
-R20
 R21
 R22
+R23
+R2
 R3
-R4
-Z29 DEx4 work 10 user_logic 0 22 9Q;=ebYE2bA@5ZI<]ZI=o0
+Z29 DEx4 work 10 user_logic 0 22 `bLQWWT?G=c^V^ldECZ]c1
 l205
 L132
-V^H4i1_?ZY5aVS:8VFjR0R1
-!s100 ^1091llbYheMBMF9lWQ3>1
+V16b7Y<<fP:P<57^S4AET_1
+!s100 REAkzeX86<Sf=KUO@_OBG1
 R7
 31
-R25
+R17
 !i10b 1
 R26
 R27

@@ -165,7 +165,7 @@ architecture IMP of user_logic is
   -- Signals for user logic slave model s/w accessible register example
   ------------------------------------------
   signal slv_reg0                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
-  signal slv_reg1, next_slv_reg1        : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg1, next_slv_reg1	       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
   signal slv_reg2                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
   signal slv_reg3                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
   signal slv_reg4                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
@@ -256,7 +256,7 @@ begin
 		end if;
 	end process;
 		
-	
+	--ppm_output <= ppm_input;
 	
   ------------------------------------------
   -- Example code to read/write user logic slave model s/w accessible registers
@@ -297,12 +297,12 @@ begin
         slv_reg7 <= (others => '0');
         slv_reg8 <= (others => '0');
         slv_reg9 <= (others => '0');
-        --slv_reg10 <= (others => '0');
-        --slv_reg11 <= (others => '0');
-        --slv_reg12 <= (others => '0');
-        --slv_reg13 <= (others => '0');
-        --slv_reg14 <= (others => '0');
-        --slv_reg15 <= (others => '0');
+        --slv_reg10 <= (others => '0');--
+        --slv_reg11 <= (others => '0');--
+        --slv_reg12 <= (others => '0');--
+        --slv_reg13 <= (others => '0');--
+        --slv_reg14 <= (others => '0');--
+        --slv_reg15 <= (others => '0');--
         slv_reg16 <= (others => '0');
         slv_reg17 <= (others => '0');
         slv_reg18 <= (others => '0');
@@ -396,7 +396,7 @@ begin
           when "00000000000010000000000000000000" =>
             for byte_index in 0 to (C_SLV_DWIDTH/8)-1 loop
               if ( Bus2IP_BE(byte_index) = '1' ) then
-                --slv_reg12(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
+					 --slv_reg12(byte_index*8+7 downto byte_index*8) <= Bus2IP_Data(byte_index*8+7 downto byte_index*8);
               end if;
             end loop;
           when "00000000000001000000000000000000" =>

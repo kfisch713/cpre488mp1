@@ -16,7 +16,7 @@
 # ** Warning: (vlib-34) Library already exists at "work".
 # ** Warning: (vlib-34) Library already exists at "axi_ppm_v1_00_a".
 # Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
-# Start time: 17:52:31 on Feb 12,2017
+# Start time: 11:33:48 on Feb 13,2017
 # vcom -reportprogress 300 -explicit -93 -work axi_ppm_v1_00_a ../../hdl/vhdl/ppm_capture.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -24,11 +24,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ppm_capture
 # -- Compiling architecture ppm_capture_arch of ppm_capture
-# End time: 17:52:31 on Feb 12,2017, Elapsed time: 0:00:00
+# End time: 11:33:48 on Feb 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # ** Warning: (vlib-34) Library already exists at "axi_ppm_v1_00_a".
 # Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
-# Start time: 17:52:31 on Feb 12,2017
+# Start time: 11:33:48 on Feb 13,2017
 # vcom -reportprogress 300 -explicit -93 -work axi_ppm_v1_00_a ../../../../../PPM_generate.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -36,11 +36,11 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity ppm_generate
 # -- Compiling architecture ppm_generate_arch of ppm_generate
-# End time: 17:52:31 on Feb 12,2017, Elapsed time: 0:00:00
+# End time: 11:33:49 on Feb 13,2017, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # ** Warning: (vlib-34) Library already exists at "proc_common_v3_00_a".
 # Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
-# Start time: 17:52:31 on Feb 12,2017
+# Start time: 11:33:49 on Feb 13,2017
 # vcom -reportprogress 300 -explicit -93 -work proc_common_v3_00_a C:/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -50,11 +50,11 @@
 # -- Compiling package proc_common_pkg
 # -- Compiling package body proc_common_pkg
 # -- Loading package proc_common_pkg
-# End time: 17:52:32 on Feb 12,2017, Elapsed time: 0:00:01
+# End time: 11:33:49 on Feb 13,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # ** Warning: (vlib-34) Library already exists at "axi_ppm_v1_00_a".
 # Model Technology ModelSim SE-64 vcom 10.5b Compiler 2016.05 May 21 2016
-# Start time: 17:52:32 on Feb 12,2017
+# Start time: 11:33:49 on Feb 13,2017
 # vcom -reportprogress 300 -explicit -93 -work axi_ppm_v1_00_a ../../hdl/vhdl/user_logic.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -64,13 +64,11 @@
 # -- Loading package proc_common_pkg
 # -- Compiling entity user_logic
 # -- Compiling architecture IMP of user_logic
-# End t# End time: 19:15:06 on Feb 12,2017, Elapsed time: 1:23:03
-# Errors: 0, Warnings: 10
-voptargs=""+acc"" -t 1ps -lib work axi_ppm_v1_00_a.user_logic 
-# Start time: 17:52:32 on Feb 12,2017
+# End time: 11:33:49 on Feb 13,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work axi_ppm_v1_00_a.user_logic 
+# Start time: 11:33:49 on Feb 13,2017
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "ppm_capture(ppm_capture_arch)".
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "ppm_generate(ppm_generate_arch)".
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -81,11 +79,6 @@ voptargs=""+acc"" -t 1ps -lib work axi_ppm_v1_00_a.user_logic
 # Loading ieee.numeric_std(body)
 # Loading axi_ppm_v1_00_a.ppm_capture(ppm_capture_arch)#1
 # Loading axi_ppm_v1_00_a.ppm_generate(ppm_generate_arch)#1
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: kacao  Hostname: CO2041-15  ProcessID: 70408
-#           Attempting to use alternate WLF file "./wlfti3ycgf".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfti3ycgf
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
@@ -107,54 +100,60 @@ voptargs=""+acc"" -t 1ps -lib work axi_ppm_v1_00_a.user_logic
 #    Time: 0 ps  Iteration: 0  Instance: /user_logic/our_generate
 # ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 1  Instance: /user_logic/our_capture
-force -freeze sim:/user_logic/PPM_INPUT 0 0
 force -freeze sim:/user_logic/Bus2IP_Clk 1 0, 0 {5000 ps} -r {10 ns}
-force -freeze sim:/user_logic/slv_reg0 0 0
+force -freeze sim:/user_logic/PPM_INPUT 1 0
+run
+force -freeze sim:/user_logic/PPM_INPUT 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 run
 force -freeze sim:/user_logic/PPM_INPUT 1 0
 run
-force -freeze sim:/user_logic/Bus2IP_Clk 1 0, 0 {5000 ps} -r {10 ns}
 run
 run
-force -freeze sim:/user_logic/PPM_INPUT 0 0
 run
 run
-restart -f
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-force -freeze sim:/user_logic/Bus2IP_Clk 1 0, 0 {5000 ps} -r {10 ns}
-force -freeze sim:/user_logic/slv_reg0 1 0
-force -freeze sim:/user_logic/slv_reg20 186a0 0
-force -freeze sim:/user_logic/slv_reg21 186a2 0
-force -freeze sim:/user_logic/slv_reg22 186a4 0
-force -freeze sim:/user_logic/slv_reg23 186a6 0
-force -freeze sim:/user_logic/slv_reg24 186a8 0
-force -freeze sim:/user_logic/slv_reg25 186aa 0
 run
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /user_logic/our_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /user_logic/our_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /user_logic/our_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /user_logic/our_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /user_logic/our_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /user_logic/our_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /user_logic/our_generate
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /user_logic/our_generate
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /user_logic/our_capture
 run
-force -freeze sim:/user_logic/slv_reg20 186aa 0
-force -freeze sim:/user_logic/slv_reg21 186a8 0
-force -freeze sim:/user_logic/slv_reg22 186a6 0
-force -freeze sim:/user_logic/slv_reg23 186a4 0
-force -freeze sim:/user_logic/slv_reg24 186a2 0
-force -freeze sim:/user_logic/slv_reg25 186a0 0
 run
-# End time: 19:14:58 on Feb 12,2017, Elapsed time: 1:22:26
-# Errors: 0, Warnings: 20
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 11:39:55 on Feb 13,2017, Elapsed time: 0:06:06
+# Errors: 0, Warnings: 9
