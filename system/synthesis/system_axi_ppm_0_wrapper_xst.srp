@@ -3,8 +3,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to U:\Desktop\cpre488mp1\system\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 TABLE OF CONTENTS
@@ -531,23 +531,12 @@ Elaborating entity <soft_reset> (architecture <implementation>) with generics fr
 Elaborating entity <user_logic> (architecture <IMP>) with generics from library <axi_ppm_v1_00_a>.
 
 Elaborating entity <ppm_capture> (architecture <ppm_capture_arch>) from library <axi_ppm_v1_00_a>.
-WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_capture.vhd" Line 157: timer_counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_capture.vhd" Line 160: timer_counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_capture.vhd" Line 163: timer_counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_capture.vhd" Line 166: timer_counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_capture.vhd" Line 169: timer_counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_capture.vhd" Line 172: timer_counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_capture.vhd" Line 190: timer_counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_capture.vhd" Line 199: timer_counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_capture.vhd" Line 213: channel_mux_select should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_capture.vhd" Line 216: channel_mux_select should be on the sensitivity list of the process
 
 Elaborating entity <ppm_generate> (architecture <ppm_generate_arch>) from library <axi_ppm_v1_00_a>.
 WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_generate.vhd" Line 104: channel_select should be on the sensitivity list of the process
 WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_generate.vhd" Line 185: channel_select should be on the sensitivity list of the process
 WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_generate.vhd" Line 188: channel_select should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/user_logic.vhd" Line 232: frame_counter should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/user_logic.vhd" Line 233: frame_counter should be on the sensitivity list of the process
+WARNING:Xst:2972 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/user_logic.vhd" line 219. All outputs of instance <our_generate> of block <ppm_generate> are unconnected in block <user_logic>. Underlying logic will be removed.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -1054,6 +1043,8 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
         C_SLV_DWIDTH = 32
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+INFO:Xst:3210 - "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/user_logic.vhd" line 219: Output port <ppm_output> of the instance <our_generate> is unconnected or connected to loadless signal.
+    Found 32-bit register for signal <slv_reg1>.
     Found 32-bit register for signal <slv_reg0>.
     Found 32-bit register for signal <slv_reg2>.
     Found 32-bit register for signal <slv_reg3>.
@@ -1079,80 +1070,24 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
     Found 32-bit register for signal <slv_reg29>.
     Found 32-bit register for signal <slv_reg30>.
     Found 32-bit register for signal <slv_reg31>.
-    Found 32-bit adder for signal <frame_counter[31]_GND_52_o_add_0_OUT> created at line 232.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <slv_reg1<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <frame_counter<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit register for signal <frame_counter>.
+    Found 32-bit adder for signal <frame_counter[31]_GND_52_o_add_0_OUT> created at line 235.
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred 800 D-type flip-flop(s).
-	inferred  64 Latch(s).
-	inferred 802 Multiplexer(s).
+	inferred 864 D-type flip-flop(s).
+	inferred 801 Multiplexer(s).
 Unit <user_logic> synthesized.
 
 Synthesizing Unit <ppm_capture>.
     Related source file is "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_capture.vhd".
+    Found 3-bit register for signal <channel_mux_select>.
+    Found 32-bit register for signal <tmp_reg_0>.
+    Found 32-bit register for signal <tmp_reg_1>.
+    Found 32-bit register for signal <tmp_reg_2>.
+    Found 32-bit register for signal <tmp_reg_3>.
+    Found 32-bit register for signal <tmp_reg_4>.
+    Found 32-bit register for signal <tmp_reg_5>.
+    Found 32-bit register for signal <timer_counter>.
     Found 32-bit register for signal <timer_counter_plus_one>.
     Found 32-bit register for signal <slv_reg10>.
     Found 32-bit register for signal <slv_reg11>.
@@ -1172,367 +1107,36 @@ Synthesizing Unit <ppm_capture>.
     | Encoding           | auto                                           |
     | Implementation     | LUT                                            |
     -----------------------------------------------------------------------
-    Found 32-bit adder for signal <timer_counter[31]_GND_53_o_add_45_OUT> created at line 1241.
-    Found 3-bit adder for signal <channel_mux_select[2]_GND_53_o_add_50_OUT> created at line 1241.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_0<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_1<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_2<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_3<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_4<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <tmp_reg_5<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <timer_counter<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_select<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_select<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_select<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit comparator lessequal for signal <n0239> created at line 199
+    Found 32-bit adder for signal <timer_counter[31]_GND_53_o_add_53_OUT> created at line 1241.
+    Found 3-bit adder for signal <channel_mux_select[2]_GND_53_o_add_58_OUT> created at line 1241.
+    Found 32-bit comparator lessequal for signal <n0056> created at line 208
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred 224 D-type flip-flop(s).
-	inferred 227 Latch(s).
+	inferred 451 D-type flip-flop(s).
 	inferred   1 Comparator(s).
-	inferred  33 Multiplexer(s).
+	inferred   1 Multiplexer(s).
 	inferred   1 Finite State Machine(s).
 Unit <ppm_capture> synthesized.
-
-Synthesizing Unit <ppm_generate>.
-    Related source file is "//my.files.iastate.edu/users/kfisch13/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_generate.vhd".
-    Found 3-bit register for signal <PS>.
-    Found 32-bit register for signal <low_counter_data_minus1>.
-    Found 32-bit register for signal <slv_reg_data_minus1>.
-    Found 32-bit register for signal <timer_20_ms>.
-    Found 32-bit adder for signal <timer_20_ms[31]_GND_281_o_add_0_OUT> created at line 1241.
-    Found 3-bit adder for signal <channel_select[2]_GND_281_o_add_39_OUT> created at line 1241.
-    Found 32-bit subtractor for signal <GND_281_o_GND_281_o_sub_37_OUT<31:0>> created at line 1308.
-    Found 32-bit subtractor for signal <GND_281_o_GND_281_o_sub_43_OUT<31:0>> created at line 1308.
-    Found 8x1-bit Read Only RAM for signal <channel_select_reset>
-    Found 8x1-bit Read Only RAM for signal <low_counter_select>
-    Found 8x1-bit Read Only RAM for signal <PS[2]_PWR_63_o_Mux_17_o>
-    Found 8x1-bit Read Only RAM for signal <ppm_output>
-    Found 4x2-bit Read Only RAM for signal <_n0326>
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[31]_MUX_1103_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[30]_MUX_1109_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[29]_MUX_1115_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[28]_MUX_1121_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[27]_MUX_1127_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[26]_MUX_1133_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[25]_MUX_1139_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[24]_MUX_1145_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[23]_MUX_1151_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[22]_MUX_1157_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[21]_MUX_1163_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[20]_MUX_1169_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[19]_MUX_1175_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[18]_MUX_1181_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[17]_MUX_1187_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[16]_MUX_1193_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[15]_MUX_1199_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[14]_MUX_1205_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[13]_MUX_1211_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[12]_MUX_1217_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[11]_MUX_1223_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[10]_MUX_1229_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[9]_MUX_1235_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[8]_MUX_1241_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[7]_MUX_1247_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[6]_MUX_1253_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[5]_MUX_1259_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[4]_MUX_1265_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[3]_MUX_1271_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[2]_MUX_1277_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[1]_MUX_1283_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[0]_MUX_1289_o> created at line 133.
-WARNING:Xst:737 - Found 1-bit latch for signal <NS<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <NS<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <NS<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_select<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_select<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_select<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit comparator greater for signal <GND_281_o_timer_20_ms[31]_LessThan_2_o> created at line 42
-    Summary:
-	inferred   5 RAM(s).
-	inferred   4 Adder/Subtractor(s).
-	inferred  99 D-type flip-flop(s).
-	inferred  38 Latch(s).
-	inferred   1 Comparator(s).
-	inferred  43 Multiplexer(s).
-Unit <ppm_generate> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 5
- 4x2-bit single-port Read Only RAM                     : 1
- 8x1-bit single-port Read Only RAM                     : 4
-# Adders/Subtractors                                   : 8
- 3-bit adder                                           : 2
- 32-bit adder                                          : 3
- 32-bit subtractor                                     : 2
+# Adders/Subtractors                                   : 4
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 2
  4-bit adder                                           : 1
-# Registers                                            : 80
+# Registers                                            : 86
  1-bit register                                        : 39
  2-bit register                                        : 3
  3-bit register                                        : 1
- 32-bit register                                       : 36
+ 32-bit register                                       : 42
  4-bit register                                        : 1
-# Latches                                              : 329
- 1-bit latch                                           : 329
-# Comparators                                          : 2
- 32-bit comparator greater                             : 1
+# Comparators                                          : 1
  32-bit comparator lessequal                           : 1
-# Multiplexers                                         : 915
- 1-bit 2-to-1 multiplexer                              : 878
- 1-bit 6-to-1 multiplexer                              : 32
- 32-bit 2-to-1 multiplexer                             : 5
+# Multiplexers                                         : 839
+ 1-bit 2-to-1 multiplexer                              : 836
+ 32-bit 2-to-1 multiplexer                             : 3
 # FSMs                                                 : 2
 
 =========================================================================
@@ -1542,92 +1146,35 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <ppm_generate>.
-The following registers are absorbed into counter <timer_20_ms>: 1 register on signal <timer_20_ms>.
-INFO:Xst:3231 - The small RAM <Mram_channel_select_reset> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 8-word x 1-bit                      |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <PS>            |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <channel_select_reset> |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram_ppm_output> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 8-word x 1-bit                      |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <PS>            |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <ppm_output>    |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram_low_counter_select> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 8-word x 1-bit                      |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <PS>            |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to signal <low_counter_select> |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram__n0326> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 4-word x 2-bit                      |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <PS<1:0>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram_PS[2]_PWR_63_o_Mux_17_o> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 8-word x 1-bit                      |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <PS>            |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-Unit <ppm_generate> synthesized (advanced).
+Synthesizing (advanced) Unit <ppm_capture>.
+The following registers are absorbed into counter <channel_mux_select>: 1 register on signal <channel_mux_select>.
+Unit <ppm_capture> synthesized (advanced).
 
 Synthesizing (advanced) Unit <slave_attachment>.
 The following registers are absorbed into counter <INCLUDE_DPHASE_TIMER.dpto_cnt>: 1 register on signal <INCLUDE_DPHASE_TIMER.dpto_cnt>.
 Unit <slave_attachment> synthesized (advanced).
 
+Synthesizing (advanced) Unit <user_logic>.
+The following registers are absorbed into counter <frame_counter>: 1 register on signal <frame_counter>.
+Unit <user_logic> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 5
- 4x2-bit single-port distributed Read Only RAM         : 1
- 8x1-bit single-port distributed Read Only RAM         : 4
-# Adders/Subtractors                                   : 6
- 3-bit adder                                           : 2
- 32-bit adder                                          : 2
- 32-bit subtractor                                     : 2
-# Counters                                             : 2
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 3
+ 3-bit up counter                                      : 1
  32-bit up counter                                     : 1
  4-bit up counter                                      : 1
-# Registers                                            : 1177
- Flip-Flops                                            : 1177
-# Comparators                                          : 2
- 32-bit comparator greater                             : 1
+# Registers                                            : 1366
+ Flip-Flops                                            : 1366
+# Comparators                                          : 1
  32-bit comparator lessequal                           : 1
-# Multiplexers                                         : 881
- 1-bit 2-to-1 multiplexer                              : 844
- 1-bit 6-to-1 multiplexer                              : 32
- 32-bit 2-to-1 multiplexer                             : 5
+# Multiplexers                                         : 804
+ 1-bit 2-to-1 multiplexer                              : 801
+ 32-bit 2-to-1 multiplexer                             : 3
 # FSMs                                                 : 2
 
 =========================================================================
@@ -1674,20 +1221,7 @@ Optimizing unit <user_logic> ...
 
 Optimizing unit <ppm_capture> ...
 
-Optimizing unit <ppm_generate> ...
-
 Optimizing unit <soft_reset> ...
-WARNING:Xst:1293 - FF/Latch <axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_31> has a constant value of 0 in block <system_axi_ppm_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_30> has a constant value of 0 in block <system_axi_ppm_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_29> has a constant value of 0 in block <system_axi_ppm_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_28> has a constant value of 0 in block <system_axi_ppm_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_27> has a constant value of 0 in block <system_axi_ppm_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_26> has a constant value of 0 in block <system_axi_ppm_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_25> has a constant value of 0 in block <system_axi_ppm_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_24> has a constant value of 0 in block <system_axi_ppm_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_23> has a constant value of 0 in block <system_axi_ppm_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_22> has a constant value of 0 in block <system_axi_ppm_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <axi_ppm_0/USER_LOGIC_I/our_generate/timer_20_ms_21> has a constant value of 0 in block <system_axi_ppm_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -1708,8 +1242,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1219
- Flip-Flops                                            : 1219
+# Registers                                            : 1422
+ Flip-Flops                                            : 1422
 
 =========================================================================
 
@@ -1732,29 +1266,24 @@ Top Level Output File Name         : system_axi_ppm_0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1534
+# BELS                             : 1119
 #      GND                         : 1
-#      INV                         : 7
-#      LUT1                        : 83
-#      LUT2                        : 79
-#      LUT3                        : 53
-#      LUT4                        : 147
-#      LUT5                        : 174
-#      LUT6                        : 672
-#      MUXCY                       : 156
-#      MUXF7                       : 12
+#      INV                         : 5
+#      LUT1                        : 62
+#      LUT2                        : 74
+#      LUT3                        : 14
+#      LUT4                        : 65
+#      LUT5                        : 132
+#      LUT6                        : 623
+#      MUXCY                       : 67
+#      MUXF7                       : 11
 #      VCC                         : 1
-#      XORCY                       : 149
-# FlipFlops/Latches                : 1548
-#      FD                          : 152
-#      FDE                         : 192
-#      FDR                         : 42
-#      FDRE                        : 833
-#      LD                          : 291
-#      LDC                         : 6
-#      LDE                         : 32
-# Clock Buffers                    : 9
-#      BUFG                        : 9
+#      XORCY                       : 64
+# FlipFlops/Latches                : 1422
+#      FD                          : 88
+#      FDE                         : 448
+#      FDR                         : 18
+#      FDRE                        : 868
 
 Device utilization summary:
 ---------------------------
@@ -1763,23 +1292,22 @@ Selected Device : 7z020clg484-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1548  out of  106400     1%  
- Number of Slice LUTs:                 1215  out of  53200     2%  
-    Number used as Logic:              1215  out of  53200     2%  
+ Number of Slice Registers:            1422  out of  106400     1%  
+ Number of Slice LUTs:                  975  out of  53200     1%  
+    Number used as Logic:               975  out of  53200     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2382
-   Number with an unused Flip Flop:     834  out of   2382    35%  
-   Number with an unused LUT:          1167  out of   2382    48%  
-   Number of fully used LUT-FF pairs:   381  out of   2382    15%  
-   Number of unique control sets:        44
+ Number of LUT Flip Flop pairs used:   2227
+   Number with an unused Flip Flop:     805  out of   2227    36%  
+   Number with an unused LUT:          1252  out of   2227    56%  
+   Number of fully used LUT-FF pairs:   170  out of   2227     7%  
+   Number of unique control sets:        39
 
 IO Utilization: 
  Number of IOs:                         150
  Number of bonded IOBs:                   0  out of    200     0%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                9  out of     32    28%  
 
 ---------------------------
 Partition Resource Summary:
@@ -1799,26 +1327,11 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------+
-Clock Signal                                                                                                                                                                    | Clock buffer(FF name)                                            | Load  |
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------+
-S_AXI_ACLK                                                                                                                                                                      | NONE(axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 1219  |
-axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd2                                                                                                                                  | BUFG                                                             | 64    |
-axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_564_o(axi_ppm_0/USER_LOGIC_I/our_capture/PS_channel_mux_write_channel_mux_select[2]_AND_564_o1:O)| BUFG(*)(axi_ppm_0/USER_LOGIC_I/our_capture/tmp_reg_5_0)          | 32    |
-axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_403_o(axi_ppm_0/USER_LOGIC_I/our_capture/PS_channel_mux_write_channel_mux_select[2]_AND_403_o1:O)| BUFG(*)(axi_ppm_0/USER_LOGIC_I/our_capture/tmp_reg_4_0)          | 32    |
-axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_274_o(axi_ppm_0/USER_LOGIC_I/our_capture/PS_channel_mux_write_channel_mux_select[2]_AND_274_o1:O)| BUFG(*)(axi_ppm_0/USER_LOGIC_I/our_capture/tmp_reg_3_0)          | 32    |
-axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_177_o(axi_ppm_0/USER_LOGIC_I/our_capture/PS_channel_mux_write_channel_mux_select[2]_AND_177_o1:O)| BUFG(*)(axi_ppm_0/USER_LOGIC_I/our_capture/tmp_reg_2_0)          | 32    |
-axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_112_o(axi_ppm_0/USER_LOGIC_I/our_capture/PS_channel_mux_write_channel_mux_select[2]_AND_112_o1:O)| BUFG(*)(axi_ppm_0/USER_LOGIC_I/our_capture/tmp_reg_1_0)          | 32    |
-axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd3                                                                                                                                  | BUFG                                                             | 32    |
-axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd1                                                                                                                                  | NONE(axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_select_2)    | 3     |
-axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable(axi_ppm_0/USER_LOGIC_I/our_capture/PS__n0386<0>1:O)                                                                             | BUFG(*)(axi_ppm_0/USER_LOGIC_I/our_capture/timer_counter_0)      | 32    |
-axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o(axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o1:O)             | BUFG(*)(axi_ppm_0/USER_LOGIC_I/our_generate/channel_mux_output_0)| 32    |
-axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261(axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n0326111:O)                                                                          | NONE(*)(axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_2)    | 3     |
-axi_ppm_0/USER_LOGIC_I/our_generate/Mram_PS[2]_PWR_63_o_Mux_17_o(axi_ppm_0/USER_LOGIC_I/our_generate/Mram_PS[2]_PWR_63_o_Mux_17_o11:O)                                          | NONE(*)(axi_ppm_0/USER_LOGIC_I/our_generate/NS_0)                | 3     |
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------+
-(*) These 9 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+-----------------------------------+------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                            | Load  |
+-----------------------------------+------------------------------------------------------------------+-------+
+S_AXI_ACLK                         | NONE(axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 1422  |
+-----------------------------------+------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -1841,7 +1354,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
   Clock period: 4.270ns (frequency: 234.166MHz)
-  Total number of paths / destination ports: 82408 / 2082
+  Total number of paths / destination ports: 80313 / 2814
 -------------------------------------------------------------------------
 Delay:               4.270ns (Levels of Logic = 7)
   Source:            axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2 (FF)
@@ -1855,114 +1368,16 @@ Delay:               4.270ns (Levels of Logic = 7)
     ----------------------------------------  ------------
      FD:C->Q               6   0.282   0.518  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2 (axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2)
      LUT2:I0->O           43   0.053   0.790  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i<2>1 (axi_ppm_0/ipif_Bus2IP_RdCE<30>)
-     LUT6:I2->O            1   0.053   0.000  axi_ppm_0/USER_LOGIC_I/GND_52_o_slv_reg_read_sel[31]_equal_119_o<31>_SW0_F (N922)
-     MUXF7:I0->O           1   0.214   0.485  axi_ppm_0/USER_LOGIC_I/GND_52_o_slv_reg_read_sel[31]_equal_119_o<31>_SW0 (N22)
-     LUT6:I4->O           32   0.053   0.755  axi_ppm_0/USER_LOGIC_I/GND_52_o_slv_reg_read_sel[31]_equal_119_o<31> (axi_ppm_0/USER_LOGIC_I/GND_52_o_slv_reg_read_sel[31]_equal_119_o)
-     LUT6:I3->O            1   0.053   0.485  axi_ppm_0/Mmux_ipif_IP2Bus_Data116_SW0 (N422)
+     LUT6:I2->O            1   0.053   0.000  axi_ppm_0/USER_LOGIC_I/GND_52_o_slv_reg_read_sel[31]_equal_121_o<31>_SW0_F (N824)
+     MUXF7:I0->O           1   0.214   0.485  axi_ppm_0/USER_LOGIC_I/GND_52_o_slv_reg_read_sel[31]_equal_121_o<31>_SW0 (N22)
+     LUT6:I4->O           32   0.053   0.755  axi_ppm_0/USER_LOGIC_I/GND_52_o_slv_reg_read_sel[31]_equal_121_o<31> (axi_ppm_0/USER_LOGIC_I/GND_52_o_slv_reg_read_sel[31]_equal_121_o)
+     LUT6:I3->O            1   0.053   0.485  axi_ppm_0/Mmux_ipif_IP2Bus_Data116_SW0 (N358)
      LUT6:I4->O            1   0.053   0.413  axi_ppm_0/Mmux_ipif_IP2Bus_Data116 (axi_ppm_0/Mmux_ipif_IP2Bus_Data16)
      LUT6:I5->O            1   0.053   0.000  axi_ppm_0/Mmux_ipif_IP2Bus_Data125 (axi_ppm_0/ipif_IP2Bus_Data<0>)
      FDRE:D                    0.011          axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_0
     ----------------------------------------
     Total                      4.270ns (0.825ns logic, 3.445ns route)
                                        (19.3% logic, 80.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd2'
-  Clock period: 1.922ns (frequency: 520.291MHz)
-  Total number of paths / destination ports: 560 / 64
--------------------------------------------------------------------------
-Delay:               1.922ns (Levels of Logic = 33)
-  Source:            axi_ppm_0/USER_LOGIC_I/frame_counter_0 (LATCH)
-  Destination:       axi_ppm_0/USER_LOGIC_I/frame_counter_31 (LATCH)
-  Source Clock:      axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd2 falling
-  Destination Clock: axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd2 falling
-
-  Data Path: axi_ppm_0/USER_LOGIC_I/frame_counter_0 to axi_ppm_0/USER_LOGIC_I/frame_counter_31
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               2   0.389   0.405  axi_ppm_0/USER_LOGIC_I/frame_counter_0 (axi_ppm_0/USER_LOGIC_I/frame_counter_0)
-     INV:I->O              1   0.067   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_lut<0>_INV_0 (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_lut<0>)
-     MUXCY:S->O            1   0.291   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<0> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<0>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<1> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<1>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<2> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<2>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<3> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<3>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<4> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<4>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<5> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<5>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<6> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<6>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<7> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<7>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<8> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<8>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<9> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<9>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<10> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<10>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<11> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<11>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<12> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<12>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<13> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<13>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<14> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<14>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<15> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<15>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<16> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<16>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<17> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<17>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<18> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<18>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<19> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<19>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<20> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<20>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<21> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<21>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<22> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<22>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<23> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<23>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<24> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<24>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<25> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<25>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<26> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<26>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<27> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<27>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<28> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<28>)
-     MUXCY:CI->O           1   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<29> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<29>)
-     MUXCY:CI->O           0   0.015   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<30> (axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_cy<30>)
-     XORCY:CI->O           1   0.320   0.000  axi_ppm_0/USER_LOGIC_I/Madd_frame_counter[31]_GND_52_o_add_0_OUT_xor<31> (axi_ppm_0/USER_LOGIC_I/frame_counter[31]_GND_52_o_add_0_OUT<31>)
-     LD:D                     -0.021          axi_ppm_0/USER_LOGIC_I/frame_counter_31
-    ----------------------------------------
-    Total                      1.922ns (1.517ns logic, 0.405ns route)
-                                       (78.9% logic, 21.1% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd1'
-  Clock period: 1.307ns (frequency: 765.111MHz)
-  Total number of paths / destination ports: 6 / 3
--------------------------------------------------------------------------
-Delay:               1.307ns (Levels of Logic = 1)
-  Source:            axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_select_0 (LATCH)
-  Destination:       axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_select_0 (LATCH)
-  Source Clock:      axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd1 falling
-  Destination Clock: axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd1 falling
-
-  Data Path: axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_select_0 to axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_select_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q              9   0.389   0.452  axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_select_0 (axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_select_0)
-     INV:I->O              1   0.067   0.399  axi_ppm_0/USER_LOGIC_I/our_capture/Madd_channel_mux_select[2]_GND_53_o_add_50_OUT_xor<0>11_INV_0 (axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_select[2]_GND_53_o_add_50_OUT<0>)
-     LDC:D                    -0.021          axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_select_0
-    ----------------------------------------
-    Total                      1.307ns (0.456ns logic, 0.851ns route)
-                                       (34.9% logic, 65.1% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261'
-  Clock period: 1.414ns (frequency: 707.006MHz)
-  Total number of paths / destination ports: 6 / 3
--------------------------------------------------------------------------
-Delay:               1.414ns (Levels of Logic = 1)
-  Source:            axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 (LATCH)
-  Destination:       axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 (LATCH)
-  Source Clock:      axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261 falling
-  Destination Clock: axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261 falling
-
-  Data Path: axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 to axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q             68   0.389   0.559  axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 (axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0)
-     INV:I->O              1   0.067   0.399  axi_ppm_0/USER_LOGIC_I/our_generate/Madd_channel_select[2]_GND_281_o_add_39_OUT_xor<0>11_INV_0 (axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_GND_281_o_add_39_OUT<0>)
-     LDC:D                    -0.021          axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0
-    ----------------------------------------
-    Total                      1.414ns (0.456ns logic, 0.958ns route)
-                                       (32.2% logic, 67.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
@@ -1977,7 +1392,7 @@ Offset:              2.819ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT5:I0->O            1   0.053   0.413  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3_SW0 (N864)
+     LUT5:I0->O            1   0.053   0.413  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3_SW0 (N800)
      LUT6:I5->O            1   0.053   0.739  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3 (axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done2)
      LUT6:I0->O            3   0.053   0.499  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done8 (S_AXI_AWREADY)
      LUT4:I2->O           34   0.053   0.566  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_ce_clr1 (axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_ce_clr)
@@ -1989,7 +1404,7 @@ Offset:              2.819ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'S_AXI_ACLK'
-  Total number of paths / destination ports: 197 / 40
+  Total number of paths / destination ports: 193 / 39
 -------------------------------------------------------------------------
 Offset:              3.097ns (Levels of Logic = 4)
   Source:            axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg (FF)
@@ -2021,7 +1436,7 @@ Delay:               1.637ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT5:I0->O            1   0.053   0.413  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3_SW0 (N864)
+     LUT5:I0->O            1   0.053   0.413  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3_SW0 (N800)
      LUT6:I5->O            1   0.053   0.739  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3 (axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done2)
      LUT6:I0->O            3   0.053   0.000  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done8 (S_AXI_AWREADY)
     ----------------------------------------
@@ -2034,136 +1449,24 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock S_AXI_ACLK
-------------------------------------------------------------------------------------+---------+---------+---------+---------+
-                                                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------------------------------------------------------------------+---------+---------+---------+---------+
-S_AXI_ACLK                                                                          |    4.270|         |         |         |
-axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd2                                      |         |    2.196|         |         |
-axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd3                                      |         |    0.799|         |         |
-axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_112_o|         |    0.799|         |         |
-axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_177_o|         |    0.799|         |         |
-axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_274_o|         |    0.799|         |         |
-axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_403_o|         |    0.799|         |         |
-axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_564_o|         |    0.799|         |         |
-axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable                                     |         |    2.863|         |         |
-axi_ppm_0/USER_LOGIC_I/our_generate/Mram_PS[2]_PWR_63_o_Mux_17_o                    |         |    0.799|         |         |
-axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o     |         |    2.155|         |         |
-------------------------------------------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd1
-----------------------------------------------+---------+---------+---------+---------+
-                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------------------------+---------+---------+---------+---------+
-S_AXI_ACLK                                    |         |         |    1.160|         |
-axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd1|         |         |    1.307|         |
-----------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd2
-----------------------------------------------+---------+---------+---------+---------+
-                                              | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                  |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd2|         |         |    1.922|         |
-----------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd3
------------------------------------------------+---------+---------+---------+---------+
-                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/USER_LOGIC_I/our_capture/PS_FSM_FFd1 |         |         |    1.836|         |
-axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable|         |         |    0.841|         |
------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_112_o
------------------------------------------------+---------+---------+---------+---------+
-                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable|         |         |    0.841|         |
------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_177_o
------------------------------------------------+---------+---------+---------+---------+
-                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable|         |         |    0.841|         |
------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_274_o
------------------------------------------------+---------+---------+---------+---------+
-                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable|         |         |    0.841|         |
------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_403_o
------------------------------------------------+---------+---------+---------+---------+
-                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable|         |         |    0.841|         |
------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/USER_LOGIC_I/our_capture/channel_mux_write_channel_mux_select[2]_AND_564_o
------------------------------------------------+---------+---------+---------+---------+
-                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable|         |         |    0.841|         |
------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/USER_LOGIC_I/our_capture/timer_enable
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-S_AXI_ACLK     |         |         |    0.974|         |
+S_AXI_ACLK     |    4.270|         |         |         |
 ---------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/USER_LOGIC_I/our_generate/Mram_PS[2]_PWR_63_o_Mux_17_o
--------------------------------------------------------------------------------+---------+---------+---------+---------+
-                                                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------------------------------------------------------------------+---------+---------+---------+---------+
-S_AXI_ACLK                                                                     |         |         |   10.260|         |
-axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261                               |         |         |    1.989|         |
-axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o|         |         |   10.241|         |
--------------------------------------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261
-------------------------------------------------+---------+---------+---------+---------+
-                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------------------------------+---------+---------+---------+---------+
-S_AXI_ACLK                                      |         |         |    1.840|         |
-axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261|         |         |    1.414|         |
-------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o
-------------------------------------------------+---------+---------+---------+---------+
-                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------------------------------+---------+---------+---------+---------+
-S_AXI_ACLK                                      |         |         |    1.442|         |
-axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261|         |         |    1.800|         |
-------------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 23.00 secs
-Total CPU time to Xst completion: 22.88 secs
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.38 secs
  
 --> 
 
-Total memory usage is 485384 kilobytes
+Total memory usage is 480584 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  373 (   0 filtered)
-Number of infos    :   11 (   0 filtered)
+Number of warnings :   22 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
 

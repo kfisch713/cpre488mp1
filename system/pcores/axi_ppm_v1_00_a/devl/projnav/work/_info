@@ -9,30 +9,30 @@ z2
 cModel Technology
 Z0 dU:/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav
 T_opt
-!s110 1486751280
-VjIN9mX5ZW6;U8gKBZRLhF2
+!s110 1486943524
+VETYge1ZDB[;S1d5CfI8aE0
 015 12 17 axi_ppm_v1_00_a ppm_generate ppm_generate_arch 1
-=1-1866da19cd92-589e062f-1ab-4e28
+=1-1866da19cd92-58a0f524-3c-7f60
 Z1 o-quiet -auto_acc_if_foreign -work work +acc
 Z2 tCvgOpt 0
 n@_opt
 Z3 OL;O;10.5b;63
 R0
 T_opt1
-!s110 1486755417
-V598IgT1Aefd0X2>JMm<a02
+!s110 1486943553
+VViRN`6>;F3W?:ckY4<VSj2
 015 10 3 axi_ppm_v1_00_a user_logic imp 1
-=1-1866da19cd92-589e1659-12-4664
+=1-1866da19cd92-58a0f540-1f4-6c0c
 R1
 R2
 n@_opt1
 R3
 T_opt2
-!s110 1486686505
-V_gIHR2M?R4JGSjNDL2GTb1
-04 12 17 work ppm_generate ppm_generate_arch 1
-=1-1866da19cd92-589d0929-106-4248
-o-quiet -auto_acc_if_foreign -work work
+!s110 1486938325
+VQWz?XFNV;GmHVHDBFJjiQ1
+015 11 16 axi_ppm_v1_00_a ppm_capture ppm_capture_arch 1
+=1-1866da19cd92-58a0e0d4-27b-49d4
+R1
 R2
 n@_opt2
 R3

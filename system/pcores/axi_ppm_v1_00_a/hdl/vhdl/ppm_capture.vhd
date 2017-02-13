@@ -16,15 +16,16 @@ entity ppm_capture is
 end ppm_capture;
 
 architecture ppm_capture_arch of ppm_capture is
-	signal timer_counter 			: unsigned(31 downto 0);
+	signal timer_counter, next_timer_counter	: unsigned(31 downto 0);
 	signal timer_counter_plus_one	: unsigned(31 downto 0);
 	signal timer_reached_idle_state : std_logic := '0';
 	signal timer_mux_select, timer_enable : std_logic;
 	
 	signal channel_mux_write, frame_done_write, channel_counter_increment, channel_counter_reset : std_logic;
-	signal channel_mux_select   			: unsigned(2 downto 0);
+	signal channel_mux_select, next_channel_mux_select 			: unsigned(2 downto 0);
 
 	signal tmp_reg_0, tmp_reg_1, tmp_reg_2, tmp_reg_3, tmp_reg_4, tmp_reg_5 : std_logic_vector(31 downto 0);
+	signal next_tmp_reg_0, next_tmp_reg_1, next_tmp_reg_2, next_tmp_reg_3, next_tmp_reg_4, next_tmp_reg_5 : std_logic_vector(31 downto 0);
 	
 	type state_type is (S1a, S1b, S1c, S2, S3a, S3b, S4);
 	signal PS, NS : state_type;
@@ -36,6 +37,14 @@ architecture ppm_capture_arch of ppm_capture is
 	begin
 		if rising_edge(clk) then
 			PS <= NS;
+			channel_mux_select <= next_channel_mux_select;
+			tmp_reg_0 <= next_tmp_reg_0;
+			tmp_reg_1 <= next_tmp_reg_1;
+			tmp_reg_2 <= next_tmp_reg_2;
+			tmp_reg_3 <= next_tmp_reg_3;
+			tmp_reg_4 <= next_tmp_reg_4;
+			tmp_reg_5 <= next_tmp_reg_5;
+			timer_counter <= next_timer_counter;
 		end if;
 	end process;
 	
@@ -142,34 +151,34 @@ architecture ppm_capture_arch of ppm_capture is
 								
 								
 	--1. channel select mux
-	process(channel_mux_select, tmp_reg_0, tmp_reg_1, tmp_reg_2, tmp_reg_3, tmp_reg_4, tmp_reg_5, channel_mux_write)
+	process(channel_mux_select, tmp_reg_0, tmp_reg_1, tmp_reg_2, tmp_reg_3, tmp_reg_4, tmp_reg_5, channel_mux_write, timer_counter)
 	begin
 	
-		tmp_reg_0 <= tmp_reg_0;
-		tmp_reg_1 <= tmp_reg_1;
-		tmp_reg_2 <= tmp_reg_2;
-		tmp_reg_3 <= tmp_reg_3;
-		tmp_reg_4 <= tmp_reg_4;
-		tmp_reg_5 <= tmp_reg_5;
+		next_tmp_reg_0 <= tmp_reg_0;
+		next_tmp_reg_1 <= tmp_reg_1;
+		next_tmp_reg_2 <= tmp_reg_2;
+		next_tmp_reg_3 <= tmp_reg_3;
+		next_tmp_reg_4 <= tmp_reg_4;
+		next_tmp_reg_5 <= tmp_reg_5;
 		
 		if(channel_mux_write = '1') then 
 			if(channel_mux_select = 0) then
-				tmp_reg_0 <= std_logic_vector(timer_counter);
+				next_tmp_reg_0 <= std_logic_vector(timer_counter);
 				
 			elsif(channel_mux_select = 1) then
-				tmp_reg_1 <= std_logic_vector(timer_counter);
+				next_tmp_reg_1 <= std_logic_vector(timer_counter);
 				
 			elsif (channel_mux_select = 2) then
-				tmp_reg_2 <= std_logic_vector(timer_counter);
+				next_tmp_reg_2 <= std_logic_vector(timer_counter);
 				
 			elsif(channel_mux_select = 3) then
-				tmp_reg_3 <= std_logic_vector(timer_counter);
+				next_tmp_reg_3 <= std_logic_vector(timer_counter);
 				
 			elsif(channel_mux_select = 4) then
-				tmp_reg_4 <= std_logic_vector(timer_counter);
+				next_tmp_reg_4 <= std_logic_vector(timer_counter);
 				
 			elsif(channel_mux_select = 5) then
-				tmp_reg_5 <= std_logic_vector(timer_counter);
+				next_tmp_reg_5 <= std_logic_vector(timer_counter);
 			end if;
 		end if;
 	end process;
@@ -183,17 +192,17 @@ architecture ppm_capture_arch of ppm_capture is
 	end process;
 	
 	--3. Timer mux select
-	process(timer_mux_select, timer_counter_plus_one, timer_enable)
+	process(timer_mux_select, timer_counter_plus_one, timer_enable, timer_counter)
 	begin
 		
 		timer_reached_idle_state <= '0';
-		timer_counter <= timer_counter;
+		next_timer_counter <= timer_counter;
 		
 		if(timer_enable = '1') then
 			if(timer_mux_select = '1') then
-				timer_counter <= timer_counter_plus_one;
+				next_timer_counter <= timer_counter_plus_one;
 			else
-				timer_counter <= (others => '0');
+				next_timer_counter <= (others => '0');
 			end if;
 			
 			if(timer_counter >= 800000) then
@@ -207,17 +216,17 @@ architecture ppm_capture_arch of ppm_capture is
 	
 	
 	--4. Channel counter / the select for the channel mux
-	process(channel_counter_increment, channel_counter_reset)
+	process(channel_counter_increment, channel_counter_reset, channel_mux_select)
 	begin
 	
-		channel_mux_select <= channel_mux_select;
+		next_channel_mux_select <= channel_mux_select;
 	
 		if(channel_counter_increment = '1') then
-			channel_mux_select <= unsigned(channel_mux_select) + 1;
+			next_channel_mux_select <= unsigned(channel_mux_select) + 1;
 		end if;
 		
 		if(channel_counter_reset = '1') then
-			channel_mux_select <= (others => '0');
+			next_channel_mux_select <= (others => '0');
 		end if;
 	end process;
 	

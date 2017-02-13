@@ -63,7 +63,7 @@ int main()
 	volatile int *slv_reg25 = SLV_REG(25);
 
 	//1 == software, 0 == hardware
-	*slv_reg0 = 1;
+	*slv_reg0 = 0;
 
 	/*
     //capture
@@ -77,12 +77,12 @@ int main()
     }
     */
 
-	*slv_reg20 = 0x100;
-	*slv_reg21 = 0xF186a0;
-	*slv_reg22 = 0xF186a0;
-	*slv_reg23 = 0x100;
-	*slv_reg24 = 0x100;
-	*slv_reg25 = 0x100;
+	*slv_reg20 = 0x186a0;
+	*slv_reg21 = 0x30;
+	*slv_reg22 = 0x30;
+	*slv_reg23 = 0x30;
+	*slv_reg24 = 0x30;
+	*slv_reg25 = 0x30;
 
     //generate
     while(!(*SWs & 0x8)){

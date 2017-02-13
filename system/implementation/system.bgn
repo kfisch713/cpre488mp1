@@ -7,7 +7,7 @@ C:\Xilinx\14.7\ISE_DS\ISE\;C:\Xilinx\14.7\ISE_DS\EDK.
    "system" is an NCD, version 3.2, device xc7z020, package clg484, speed -1
 Opened constraints file system.pcf.
 
-Fri Feb 10 13:45:28 2017
+Sun Feb 12 19:18:31 2017
 
 C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\bitgen.exe -w system.ncd 
 
@@ -92,16 +92,7 @@ There were 0 CONFIG constraint(s) processed from system.pcf.
 
 
 Running DRC.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03261 is sourced by a
-   combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram_PS[2]_PWR_63_o_Mux_17_o is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-DRC detected 0 errors and 2 warnings.  Please see the previously displayed
-individual error or warning messages for more details.
+DRC detected 0 errors and 0 warnings.
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
 INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
 '1717@io.ece.iastate.edu;27008@io.ece.iastate.edu;

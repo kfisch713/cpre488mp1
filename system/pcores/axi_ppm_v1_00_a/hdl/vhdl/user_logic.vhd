@@ -155,16 +155,17 @@ architecture IMP of user_logic is
 			  ppm_output : out std_logic );
 	end component;
 	
-	signal frame_counter : unsigned(31 downto 0) := (others => '0');
+	signal frame_counter, next_frame_counter : unsigned(31 downto 0) := (others => '0');
 	signal frame_counter_increment: std_logic;
 	signal ppm_output_from_reg : std_logic;
+	
   
 
   ------------------------------------------
   -- Signals for user logic slave model s/w accessible register example
   ------------------------------------------
   signal slv_reg0                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
-  signal slv_reg1                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
+  signal slv_reg1, next_slv_reg1        : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
   signal slv_reg2                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
   signal slv_reg3                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
   signal slv_reg4                       : std_logic_vector(C_SLV_DWIDTH-1 downto 0) := (others => '0');
@@ -226,24 +227,42 @@ begin
 		          ppm_output => ppm_output_from_reg);
 	
 	-- Frame counter in slv_reg1
-	process(frame_counter_increment)
+	process(frame_counter_increment, frame_counter, slv_reg1)
 	begin
-		frame_counter <= frame_counter;
+		next_slv_reg1 <= slv_reg1;
+		next_frame_counter <= frame_counter;
 		if(frame_counter_increment = '1') then
-			frame_counter <= frame_counter + 1;
-			slv_reg1 <= std_logic_vector(frame_counter);
+			next_frame_counter <= frame_counter + 1;
+			next_slv_reg1 <= std_logic_vector(frame_counter);
 		end if;
 	end process;
 	
 	-- Passthrough process
 	process(slv_reg0, ppm_input, ppm_output_from_reg)
 	begin
-		if (slv_reg0(0) = '0') then
-			ppm_output <= ppm_input;
-		else
-			ppm_output <= ppm_output_from_reg;
+		--if (slv_reg0(0) = '0') then
+		--	ppm_output <= ppm_input;
+		--else
+		--	ppm_output <= ppm_output_from_reg;
+		--end if;
+	end process;
+	
+	--sync process
+	process(Bus2IP_Clk)
+	begin
+		if rising_edge(Bus2IP_Clk) then
+			frame_counter <= next_frame_counter;
+			slv_reg1 <= next_slv_reg1;
 		end if;
 	end process;
+	
+	
+	
+	PPM_OUTPUT <= PPM_INPUT;
+	
+	
+	
+	
   ------------------------------------------
   -- Example code to read/write user logic slave model s/w accessible registers
   -- 
