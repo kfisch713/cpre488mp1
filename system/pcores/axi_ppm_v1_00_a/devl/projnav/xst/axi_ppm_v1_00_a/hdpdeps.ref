@@ -1,0 +1,39 @@
+V3 20
+FL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../../../../PPM_generate.vhdl 2017/02/12.20:53:55 P.20131013
+EN axi_ppm_v1_00_a/ppm_generate 1486958389 \
+      FL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../../../../PPM_generate.vhdl \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR axi_ppm_v1_00_a/ppm_generate/ppm_generate_arch 1486958390 \
+      FL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../../../../PPM_generate.vhdl \
+      EN axi_ppm_v1_00_a/ppm_generate 1486958389
+FL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../hdl/vhdl/axi_ppm.vhd 2017/02/12.20:54:08 P.20131013
+EN axi_ppm_v1_00_a/axi_ppm 1486958397 \
+      FL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../hdl/vhdl/axi_ppm.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1486958374 \
+      PB proc_common_v3_00_a/ipif_pkg 1486958384 \
+      EN proc_common_v3_00_a/soft_reset 1486958379 LB axi_lite_ipif_v1_01_a \
+      EN axi_lite_ipif_v1_01_a/axi_lite_ipif 1486958393 LB axi_ppm_v1_00_a \
+      EN axi_ppm_v1_00_a/user_logic 1486958395
+AR axi_ppm_v1_00_a/axi_ppm/IMP 1486958398 \
+      FL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../hdl/vhdl/axi_ppm.vhd \
+      EN axi_ppm_v1_00_a/axi_ppm 1486958397 \
+      CP axi_lite_ipif_v1_01_a/axi_lite_ipif CP proc_common_v3_00_a/soft_reset \
+      CP axi_ppm_v1_00_a/user_logic
+FL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../hdl/vhdl/ppm_capture.vhd 2017/02/12.20:54:08 P.20131013
+EN axi_ppm_v1_00_a/ppm_capture 1486958513 \
+      FL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../hdl/vhdl/ppm_capture.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR axi_ppm_v1_00_a/ppm_capture/ppm_capture_arch 1486958514 \
+      FL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../hdl/vhdl/ppm_capture.vhd \
+      EN axi_ppm_v1_00_a/ppm_capture 1486958513
+FL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../hdl/vhdl/user_logic.vhd 2017/02/12.21:55:05 P.20131013
+EN axi_ppm_v1_00_a/user_logic 1486958395 \
+      FL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../hdl/vhdl/user_logic.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB proc_common_v3_00_a \
+      PB proc_common_v3_00_a/proc_common_pkg 1486958374
+AR axi_ppm_v1_00_a/user_logic/IMP 1486958396 \
+      FL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../hdl/vhdl/user_logic.vhd \
+      EN axi_ppm_v1_00_a/user_logic 1486958395 CP ppm_capture CP ppm_generate

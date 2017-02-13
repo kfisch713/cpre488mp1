@@ -236,3 +236,139 @@ We recommend that you create a new BSP project pointing to a valid hardware proj
 	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
 
 19:20:47.989 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:08:26.054 INFO  - Processing command line option -hwspec \\my.files.iastate.edu\users\burneykb\Documents\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+21:08:27.987 INFO  - The hardware specification for project 'system_hw_platform' is different from \\my.files.iastate.edu\users\burneykb\Documents\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+21:08:28.587 INFO  - Copied contents of \\my.files.iastate.edu\users\burneykb\Documents\cpre488mp1\system\SDK\SDK_Export\hw\system.xml into \system_hw_platform\system.xml. 
+21:08:29.178 INFO  - Copied contents of \\my.files.iastate.edu\users\burneykb\Documents\cpre488mp1\system\SDK\SDK_Export\hw\system.bit into \system_hw_platform\system.bit. 
+21:09:55.619 INFO  - Copied contents of \\my.files.iastate.edu\users\burneykb\Documents\cpre488mp1\system\SDK\SDK_Export\hw\ps7_init.c into \system_hw_platform\ps7_init.c. 
+21:09:55.639 INFO  - Copied contents of \\my.files.iastate.edu\users\burneykb\Documents\cpre488mp1\system\SDK\SDK_Export\hw\ps7_init.h into \system_hw_platform\ps7_init.h. 
+21:09:55.779 INFO  - Copied contents of \\my.files.iastate.edu\users\burneykb\Documents\cpre488mp1\system\SDK\SDK_Export\hw\ps7_init.html into \system_hw_platform\ps7_init.html. 
+21:09:56.012 INFO  - Copied contents of \\my.files.iastate.edu\users\burneykb\Documents\cpre488mp1\system\SDK\SDK_Export\hw\ps7_init.tcl into \system_hw_platform\ps7_init.tcl. 
+21:09:56.212 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+21:09:58.545 INFO  - Updating hardware inferred compiler options for rc_control. 
+21:09:58.564 INFO  - Clearing existing target manager status. 
+21:15:15.921 INFO  - FPGA configured successfully with bitstream "U:/Documents/cpre488mp1/sw/system_hw_platform/system.bit" 
+21:15:30.728 INFO  - ps7_init.tcl file does not exists in HwPlatform 
+21:15:30.828 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:15:30.928 INFO  - PS initialization will be done as it is not done before. 
+21:15:30.931 INFO  - Running PS initialization.... 
+21:15:31.051 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error while running ps7_init method.
+invalid command name "ps7_init"
+	at com.xilinx.sdk.targetmanager.internal.TM.run_ps7_init(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+21:16:25.937 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:16:26.047 INFO  - PS initialization will be done as it is not done before. 
+21:16:26.047 INFO  - Running PS initialization.... 
+21:16:26.496 INFO  - ps7_init is completed. 
+21:16:26.596 INFO  - ps7_post_config is completed. 
+21:16:26.706 INFO  - PS Initialization is complete. 
+21:25:52.281 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:25:52.292 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:25:55.688 INFO  - Processing command line option -hwspec \\my.files.iastate.edu\users\burneykb\Documents\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+21:27:00.607 INFO  - FPGA configured successfully with bitstream "U:/Documents/cpre488mp1/sw/system_hw_platform/system.bit" 
+21:27:53.536 INFO  - Processor reset is completed for ps7_cortexa9_0 
+21:41:37.755 ERROR - SDK has detected that project system_hw_platform has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+21:43:09.995 ERROR - SDK has detected that project system_hw_platform has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+21:44:32.121 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+21:44:32.130 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+21:44:45.632 INFO  - Processing command line option -hwspec \\my.files.iastate.edu\users\burneykb\Documents\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+21:47:05.281 INFO  - FPGA configured successfully with bitstream "U:/Documents/cpre488mp1/sw/system_hw_platform/system.bit" 
+22:20:29.310 ERROR - SDK has detected that project system_hw_platform has been deleted (or renamed).
+This project was referenced by a BSP project, which will now fail to compile properly.
+
+We recommend that you create a new BSP project pointing to a valid hardware project. Alternatively, you can fix the project references in the BSP, and update the path to the hardware specification file in 'libgen.options', and in ELF check options in dependant applications. 
+22:20:54.995 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+22:25:22.240 INFO  - Processing command line option -hwspec \\my.files.iastate.edu\users\burneykb\Documents\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+22:32:24.209 INFO  - FPGA configured successfully with bitstream "U:/Documents/cpre488mp1/sw/system_hw_platform/system.bit" 
+22:34:29.443 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:34:29.543 INFO  - PS initialization will be done as it is not done before. 
+22:34:29.543 INFO  - Running PS initialization.... 
+22:34:30.003 INFO  - ps7_init is completed. 
+22:34:30.023 INFO  - ps7_post_config is completed. 
+22:34:30.133 INFO  - PS Initialization is complete. 
+22:34:57.505 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:34:59.347 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:36:20.752 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:36:55.021 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:38:47.112 INFO  - FPGA configured successfully with bitstream "U:/Documents/cpre488mp1/sw/system_hw_platform/system.bit" 
+22:38:57.652 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:38:59.452 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+22:39:08.110 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:39:09.619 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+22:39:16.884 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:39:18.886 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+22:39:55.514 INFO  - FPGA configured successfully with bitstream "U:/Documents/cpre488mp1/sw/system_hw_platform/system.bit" 
+22:40:17.123 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:40:18.253 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+22:40:37.851 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:41:24.621 INFO  - FPGA configured successfully with bitstream "U:/Documents/cpre488mp1/sw/system_hw_platform/system.bit" 
+22:41:33.491 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:41:34.541 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+
+	at com.xilinx.sdk.targetmanager.internal.TM.stop(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.CPURunSession.terminate(Unknown Source)
+
+22:41:46.434 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+22:41:59.560 INFO  - Processing command line option -hwspec \\my.files.iastate.edu\users\burneykb\Documents\cpre488mp1\system\SDK\SDK_Export\hw\system.xml. 
+22:42:17.446 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:42:17.546 INFO  - PS initialization will be done as it is not done before. 
+22:42:17.546 INFO  - Running PS initialization.... 
+22:42:18.002 INFO  - ps7_init is completed. 
+22:42:18.102 INFO  - ps7_post_config is completed. 
+22:42:18.212 INFO  - PS Initialization is complete. 
+22:42:30.540 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:43:52.583 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:43:54.474 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:47:14.878 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:47:17.530 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:47:42.016 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:47:43.800 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:50:40.173 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:50:41.309 ERROR - Unexpected error while opening JTAG UART:  java.lang.RuntimeException: Error while opening JTAG UART server: MDM Uart NOT Present in the System
+Could not detect MDM peripheral on hardware. Please check:
+    1. If FPGA is configured correctly
+    2. MDM Core is instantiated in the design
+    3. If the correct FPGA is referred, in case of multiple FPGAs
+    4. If the correct MDM is referred, in case of a multiple MDM system
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.startJTAGUARTServer(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.comm.JTAGUARTStreamsProxy.<init>(Unknown Source)
+
+22:50:41.719 INFO  - Processor reset is completed for ps7_cortexa9_0 
+22:52:22.727 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+22:52:24.574 INFO  - Processor reset is completed for ps7_cortexa9_0 
+23:08:08.448 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+23:08:08.456 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

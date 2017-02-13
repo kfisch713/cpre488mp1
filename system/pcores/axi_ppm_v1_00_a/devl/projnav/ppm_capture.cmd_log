@@ -1,0 +1,1 @@
+vhdtdtfi -lib axi_ppm_v1_00_a ../../hdl/vhdl/ppm_capture.vhd -prj axi_ppm -o ppm_capture.spl -module ppm_capture -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 

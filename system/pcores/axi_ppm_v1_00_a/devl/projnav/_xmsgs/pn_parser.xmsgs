@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;U:/Desktop/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/user_logic.vhd&quot; into library axi_ppm_v1_00_a</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/user_logic.vhd&quot; into library axi_ppm_v1_00_a</arg>
 </msg>
 
 </messages>

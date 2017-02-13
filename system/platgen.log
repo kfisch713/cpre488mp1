@@ -23,7 +23,7 @@ WARNING:EDK - INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable
    qualify for Xilinx software updates or new releases.
 
 
-Parse U:/Desktop/cpre488mp1/system/system.mhs ...
+Parse U:/Documents/cpre488mp1/system/system.mhs ...
 
 Read MPD definitions ...
 
@@ -84,7 +84,7 @@ IPNAME: axi_interconnect, INSTANCE: axi4lite_0 - 1 master(s) : 4 slave(s)
 
 Checking port drivers...
 WARNING:EDK:4181 - PORT: FCLK_CLK1, CONNECTOR: processing_system7_0_FCLK_CLK1 -
-   floating connection - U:\Desktop\cpre488mp1\system\system.mhs line 176 
+   floating connection - U:\Documents\cpre488mp1\system\system.mhs line 176 
 
 Performing Clock DRCs...
 
@@ -157,26 +157,26 @@ Running XST synthesis ...
 INFO:EDK:4211 - The following instances are synthesized with XST. The MPD option
    IMP_NETLIST=TRUE indicates that a NGC file is to be produced using XST
    synthesis. IMP_NETLIST=FALSE (default) instances are not synthesized. 
-INSTANCE:axi4lite_0 - U:\Desktop\cpre488mp1\system\system.mhs line 42 - Running
+INSTANCE:axi4lite_0 - U:\Documents\cpre488mp1\system\system.mhs line 42 -
+Running XST synthesis
+INSTANCE:sws_8bits - U:\Documents\cpre488mp1\system\system.mhs line 50 - Running
 XST synthesis
-INSTANCE:sws_8bits - U:\Desktop\cpre488mp1\system\system.mhs line 50 - Running
-XST synthesis
-INSTANCE:leds_8bits - U:\Desktop\cpre488mp1\system\system.mhs line 64 - Running
-XST synthesis
-INSTANCE:btns_5bits - U:\Desktop\cpre488mp1\system\system.mhs line 78 - Running
-XST synthesis
-INSTANCE:processing_system7_0 - U:\Desktop\cpre488mp1\system\system.mhs line 92
-- Running XST synthesis
-INSTANCE:axi_ppm_0 - U:\Desktop\cpre488mp1\system\system.mhs line 179 - Running
-XST synthesis
+INSTANCE:leds_8bits - U:\Documents\cpre488mp1\system\system.mhs line 64 -
+Running XST synthesis
+INSTANCE:btns_5bits - U:\Documents\cpre488mp1\system\system.mhs line 78 -
+Running XST synthesis
+INSTANCE:processing_system7_0 - U:\Documents\cpre488mp1\system\system.mhs line
+92 - Running XST synthesis
+INSTANCE:axi_ppm_0 - U:\Documents\cpre488mp1\system\system.mhs line 179 -
+Running XST synthesis
 
 Running NGCBUILD ...
 IPNAME:system_axi4lite_0_wrapper INSTANCE:axi4lite_0 -
-U:\Desktop\cpre488mp1\system\system.mhs line 42 - Running NGCBUILD
+U:\Documents\cpre488mp1\system\system.mhs line 42 - Running NGCBUILD
 INFO:EDK:3509 - NCF files should not be modified as they will be regenerated.
    If any constraint needs to be overridden, this should be done by modifying
    the data/system.ucf file.
 
 Rebuilding cache ...
 
-Total run time: 96.00 seconds
+Total run time: 97.00 seconds

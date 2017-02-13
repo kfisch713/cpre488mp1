@@ -1,0 +1,72 @@
+    ____  ____
+   /   /\/   /
+  /___/  \  /    VENDOR      : Xilinx Inc.
+  \   \   \/     VERSION     : 14.7 (P.20131013)
+   \   \         APPLICATION : C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe
+   /   /         CONTENTS    : Compilation Log
+  /___/   /\     FILENAME    : compxlib.log
+  \   \  /  \    
+   \___\/\___\
+
+Release 14.7 - C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe 14.7 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Processing command line ...
+Reading the compxlib configuration file - 'compxlib.cfg' ...
+Library Source Paths => 'C:/Xilinx/14.7/ISE_DS/ISE'
+Current Working Directory => 'U:\Documents\cpre488mp1\system\pcores\axi_ppm_v1_00_a\devl\projnav'
+Compilation Mode = FAST
+Execute Mode = ON
+Scheduling library installation & compilation for architectures: zynq
+
+Scheduling library installation & compilation for libraries: simprim unisim xilinxcorelib edk
+
+Signature:-
+------------------------------------------------------------------------------
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\compxlib.exe -s mti_se -l all -arch zynq -lib unisim -lib simprim -lib xilinxcorelib -lib edk -exclude_superseded -intstyle ise 
+------------------------------------------------------------------------------
+ERROR:Compxlib - COMPXLIB[sim]: Unable to automatically find executables for simulator 'mti_se' from the following paths:
+    C:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64
+   C:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64
+   C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64
+   C:\Xilinx\14.7\ISE_DS\ISE\lib\nt64
+   C:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav
+   C:\Xilinx\14.7\ISE_DS\PlanAhead\bin
+   C:\Xilinx\14.7\ISE_DS\EDK\bin\nt64
+   C:\Xilinx\14.7\ISE_DS\EDK\lib\nt64
+   C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin
+   C:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin
+   C:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin
+   C:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin
+   C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin
+   C:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin
+   C:\Xilinx\14.7\ISE_DS\common\bin\nt64
+   C:\Xilinx\14.7\ISE_DS\common\lib\nt64
+   C:\ProgramData\Oracle\Java\javapath
+   C:\windows\system32
+   C:\windows
+   C:\windows\System32\Wbem
+   C:\windows\System32\WindowsPowerShell\v1.0\
+   C:\Program Files (x86)\Box\Box Edit\
+   C:\Program Files (x86)\Windows Live\Shared
+   C:\Program Files\MATLAB\R2016a\runtime\win64
+   C:\Program Files\MATLAB\R2016a\bin
+   C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\
+   C:\windows\system32\config\systemprofile\.dnx\bin
+   C:\Program Files\Microsoft DNX\Dnvm\
+   C:\Program Files\Microsoft SQL Server\130\Tools\Binn\
+   C:\Program Files (x86)\IVI Foundation\IVI\bin
+   C:\Program Files\IVI Foundation\IVI\bin
+   C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\
+   C:\Program Files\IVI Foundation\VISA\Win64\Bin\
+   C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin
+   C:\Program Files\TortoiseSVN\bin
+   C:\Program Files\doxygen\bin
+   C:\Program Files (x86)\Pico Technology\PicoScope6\
+   C:\Program Files\Git\cmd
+   C:\Program Files\Agilent\IO Libraries Suite\bin
+   C:\Program Files\IVI Foundation\VISA\Win64\agvisa
+   C:\Program Files (x86)\Agilent\IO Libraries Suite\bin
+   C:\Program Files (x86)\IVI Foundation\VISA\WinNT\agvisa
+   C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\.
+Simulator 'mti_se' is ignored.

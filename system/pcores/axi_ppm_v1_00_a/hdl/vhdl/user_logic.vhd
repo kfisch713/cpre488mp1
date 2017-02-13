@@ -240,11 +240,11 @@ begin
 	-- Passthrough process
 	process(slv_reg0, ppm_input, ppm_output_from_reg)
 	begin
-		--if (slv_reg0(0) = '0') then
-		--	ppm_output <= ppm_input;
-		--else
-		--	ppm_output <= ppm_output_from_reg;
-		--end if;
+		if (slv_reg0(0) = '0') then
+			ppm_output <= ppm_input;
+		else
+			ppm_output <= ppm_output_from_reg;
+		end if;
 	end process;
 	
 	--sync process
@@ -255,12 +255,7 @@ begin
 			slv_reg1 <= next_slv_reg1;
 		end if;
 	end process;
-	
-	
-	
-	PPM_OUTPUT <= PPM_INPUT;
-	
-	
+		
 	
 	
   ------------------------------------------

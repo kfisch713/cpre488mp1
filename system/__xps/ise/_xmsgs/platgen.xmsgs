@@ -46,7 +46,7 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 <msg type="info" file="EDK" num="0" delta="new" ><arg fmt="%s" index="1">INFO: You can modify the DDR address range accessed by Programmable Logic through the processing_system7 AXI slave interfaces. If MicroBlaze is a master on processing_system7 AXI slave interfaces, please use the top half of the address range (Base Address = 0x10000000; High Address = 0x1FFFFFFF). For all other master, any subset of the DDR address can be used. See Xilinx Answer 47167 for more information.</arg> 
 </msg>
 
-<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">FCLK_CLK1</arg>, CONNECTOR: <arg fmt="%s" index="2">processing_system7_0_FCLK_CLK1</arg> - floating connection - <arg fmt="%s" index="3">U:\Desktop\cpre488mp1\system\system.mhs line 176</arg> 
+<msg type="warning" file="EDK" num="4181" delta="new" >PORT: <arg fmt="%s" index="1">FCLK_CLK1</arg>, CONNECTOR: <arg fmt="%s" index="2">processing_system7_0_FCLK_CLK1</arg> - floating connection - <arg fmt="%s" index="3">U:\Documents\cpre488mp1\system\system.mhs line 176</arg> 
 </msg>
 
 <msg type="info" file="EDK" num="4130" delta="new" >IPNAME: <arg fmt="%s" index="1">axi_interconnect</arg>, INSTANCE:<arg fmt="%s" index="2">axi4lite_0</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_RANGE_CHECK</arg> value to <arg fmt="%s" index="6">1</arg> - <arg fmt="%s" index="7">C:\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\axi_interconnect_v1_06_a\data\axi_interconnect_v2_1_0.mpd line 149</arg> 

@@ -1,6 +1,37 @@
-19:20:05 **** Incremental Build of configuration Debug for project rc_control ****
+23:06:47 **** Auto Build of configuration Debug for project rc_control ****
 make all 
-make: Nothing to be done for `all'.
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:41:23: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:42:22: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:44:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:45:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:46:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:47:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:48:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:49:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:50:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:51:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:53:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:54:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:55:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:56:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:57:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/helloworld.c:58:27: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63068	   2328	  29852	  95248	  17410	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
 
-19:20:05 Build Finished (took 130ms)
+23:06:48 Build Finished (took 1s.300ms)
 

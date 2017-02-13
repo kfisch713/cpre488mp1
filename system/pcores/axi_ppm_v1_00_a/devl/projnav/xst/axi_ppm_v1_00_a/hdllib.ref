@@ -1,0 +1,8 @@
+EN ppm_generate NULL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../../../../PPM_generate.vhdl sub00/vhpl02 1486958389
+AR user_logic imp U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../hdl/vhdl/user_logic.vhd sub00/vhpl05 1486958396
+EN user_logic NULL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../hdl/vhdl/user_logic.vhd sub00/vhpl04 1486958395
+EN ppm_capture NULL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../hdl/vhdl/ppm_capture.vhd sub00/vhpl00 1486958513
+AR ppm_capture ppm_capture_arch U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../hdl/vhdl/ppm_capture.vhd sub00/vhpl01 1486958514
+EN axi_ppm NULL U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../hdl/vhdl/axi_ppm.vhd sub00/vhpl06 1486958397
+AR axi_ppm imp U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../hdl/vhdl/axi_ppm.vhd sub00/vhpl07 1486958398
+AR ppm_generate ppm_generate_arch U:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav/../../../../../PPM_generate.vhdl sub00/vhpl03 1486958390
