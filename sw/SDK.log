@@ -486,3 +486,8 @@ We recommend that you create a new BSP project pointing to a valid hardware proj
 06:19:59.645 INFO  - Processor reset is completed for ps7_cortexa9_0 
 06:20:29.017 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
 06:20:30.940 INFO  - Processor reset is completed for ps7_cortexa9_0 
+06:32:59.173 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+06:32:59.190 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
