@@ -15,21 +15,24 @@ entity ppm_generate is
 end ppm_generate;
 
 architecture ppm_generate_arch of ppm_generate is
-	signal slv_reg_data			: unsigned(31 downto 0);
-	signal slv_reg_data_minus1  : unsigned(31 downto 0);
-	signal low_counter_data		: unsigned(31 downto 0);
-	signal channel_mux_output	: std_logic_vector(31 downto 0);
+	signal slv_reg_data				: unsigned(31 downto 0);
+	signal slv_reg_data_minus1  	: unsigned(31 downto 0);
+	signal low_counter_data			: unsigned(31 downto 0);
+	signal channel_mux_output		: std_logic_vector(31 downto 0);
 	signal low_counter_data_minus1 : unsigned(31 downto 0);
-	signal timer_20_ms 			: unsigned(31 downto 0) := to_unsigned(0, 32);
+	signal timer_20_ms 				: unsigned(31 downto 0) := to_unsigned(0, 32);
 	
 	
 	signal channel_select_reset, slv_reg_select, low_counter_select, channel_select_write_enable : std_logic;
-	signal ppm_to_low, ppm_to_high : std_logic;
-	signal channel_select : unsigned(2 downto 0);
+	signal ppm_to_low, ppm_to_high 		: std_logic;
+	signal channel_select, next_channel_select			: unsigned(2 downto 0);
 	
-	type state_type is (S1a, S1b, S2a, S2b, S2c, S3);
+	type state_type is (S1a, S1b, S2a_quick_fix, S2a, S2b, S2c, S3);
 	signal PS, NS : state_type;
 
+	attribute keep : string;
+	
+	
 	begin
 	
 	--FSM sync process
@@ -38,21 +41,23 @@ architecture ppm_generate_arch of ppm_generate is
 		if rising_edge(clk) then
 			timer_20_ms <= timer_20_ms + 1;
 			PS <= NS;
+			channel_select <= next_channel_select;
 
 			if (timer_20_ms > 2000000) then 
 				timer_20_ms <= (others => '0');
 				PS <= S1a;
-			end if; 
+			end if;
 		end if;
 	end process;
 	
 	--FSM async process
-	process(PS, ppm_to_low, ppm_to_high, channel_select_write_enable)
+	process(PS, ppm_to_low, ppm_to_high, channel_select)
 	begin
 		channel_select_reset <= '0';
 		channel_select_write_enable <= '0';
 		slv_reg_select <= '0';
 		low_counter_select <= '0';
+		
 
 		case PS is
 			when S1a =>
@@ -70,15 +75,23 @@ architecture ppm_generate_arch of ppm_generate is
 				low_counter_select <= '1';
 				
 				if (ppm_to_high = '1') then 
-					NS <= S2a; 
+					NS <= S2a_quick_fix; 
 				else
 					NS <= S1b;
 				end if;
 			
+			when S2a_quick_fix =>
+				channel_select_reset <= '0';
+				channel_select_write_enable <= '0';
+				slv_reg_select <= '1';
+				low_counter_select <= '0';
+				
+				NS <= S2a;
+			
 			when S2a =>
 				channel_select_reset <= '0';
 				channel_select_write_enable <= '1';
-				slv_reg_select <= '0';
+				slv_reg_select <= '1';
 				low_counter_select <= '0';
 				
 				NS <= S2b;
@@ -101,10 +114,10 @@ architecture ppm_generate_arch of ppm_generate is
 				slv_reg_select <= '0';
 				low_counter_select <= '1';
 				
-				if (channel_select = 5 and ppm_to_high = '1') then
+				if (channel_select = 6 and ppm_to_high = '1') then
 					NS <= S3;
 				elsif (ppm_to_high = '1') then
-					NS <= S2a;
+					NS <= S2a_quick_fix;
 				else 
 					NS <= S2c;
 				end if;
@@ -114,6 +127,8 @@ architecture ppm_generate_arch of ppm_generate is
 				channel_select_write_enable <= '0';
 				slv_reg_select <= '0';
 				low_counter_select <= '1';
+				
+				NS <= S3;
 			
 		end case;			
 	end process;
@@ -122,6 +137,7 @@ architecture ppm_generate_arch of ppm_generate is
 		ppm_output <= '0' when S1a,
 					  '0' when S1b,
 					  '0' when S2a,
+					  '0' when S2a_quick_fix,
 					  '1' when S2b,
 					  '0' when S2c,
 					  '1' when S3,
@@ -147,7 +163,10 @@ architecture ppm_generate_arch of ppm_generate is
 			
 		elsif(channel_select = 5) then
 			channel_mux_output <= slv_reg25;
+		else
+			channel_mux_output <= (others => '0');
 		end if;
+		
 	end process;
 		
 			
@@ -180,17 +199,17 @@ architecture ppm_generate_arch of ppm_generate is
 	end process;
 	
 	--5. Channel select
-	process(channel_select_reset, channel_select_write_enable)
+	process(channel_select_reset, channel_select_write_enable, channel_select)
 	begin
-		channel_select <= channel_select;
+		next_channel_select <= channel_select;
 	
 		if (channel_select_write_enable = '1') then
-			channel_select <= unsigned(channel_select) + 1;	
+			next_channel_select <= unsigned(channel_select) + 1;	
 		end if;
 		
 		-- reseting takes priority over incermenting 
 		if (channel_select_reset = '1') then
-			channel_select <= (others => '0');
+			next_channel_select <= (others => '0');
 		end if;
 	end process;
 	

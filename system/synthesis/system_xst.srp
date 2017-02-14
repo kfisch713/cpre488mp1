@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 TABLE OF CONTENTS
@@ -571,7 +571,7 @@ Optimizing unit <system> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 0) on block system, actual ratio is 2.
+Found area constraint ratio of 100 (+ 0) on block system, actual ratio is 3.
 INFO:Xst:2260 - The FF/Latch <axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14> in Unit <axi_ppm_0> is equivalent to the following 2 FFs/Latches : <axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14_1> <axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_14_2> 
 INFO:Xst:2260 - The FF/Latch <axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_11> in Unit <axi_ppm_0> is equivalent to the following FF/Latch : <axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_11_1> 
 INFO:Xst:2260 - The FF/Latch <axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_3> in Unit <axi_ppm_0> is equivalent to the following FF/Latch : <axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/ce_out_i_3_1> 
@@ -622,32 +622,30 @@ Top Level Output File Name         : system.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 2151
+# BELS                             : 2170
 #      GND                         : 7
 #      INV                         : 114
 #      LUT1                        : 89
-#      LUT2                        : 115
-#      LUT3                        : 93
-#      LUT4                        : 248
-#      LUT5                        : 221
-#      LUT6                        : 872
+#      LUT2                        : 114
+#      LUT3                        : 125
+#      LUT4                        : 207
+#      LUT5                        : 189
+#      LUT6                        : 933
 #      MUXCY                       : 176
 #      MUXF7                       : 58
 #      VCC                         : 5
 #      XORCY                       : 153
-# FlipFlops/Latches                : 1875
-#      FD                          : 228
+# FlipFlops/Latches                : 1840
+#      FD                          : 231
 #      FDC                         : 15
 #      FDE                         : 530
-#      FDR                         : 112
-#      FDRE                        : 931
+#      FDR                         : 109
+#      FDRE                        : 934
 #      FDSE                        : 21
-#      LD                          : 35
-#      LDC                         : 3
 # Shift Registers                  : 21
 #      SRLC16E                     : 21
-# Clock Buffers                    : 2
-#      BUFG                        : 2
+# Clock Buffers                    : 1
+#      BUFG                        : 1
 # IO Buffers                       : 26
 #      IBUF                        : 4
 #      IOBUF                       : 13
@@ -662,25 +660,25 @@ Selected Device : 7z020clg484-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1875  out of  106400     1%  
- Number of Slice LUTs:                 1773  out of  53200     3%  
-    Number used as Logic:              1752  out of  53200     3%  
+ Number of Slice Registers:            1840  out of  106400     1%  
+ Number of Slice LUTs:                 1792  out of  53200     3%  
+    Number used as Logic:              1771  out of  53200     3%  
     Number used as Memory:               21  out of  17400     0%  
        Number used as SRL:               21
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   3154
-   Number with an unused Flip Flop:    1279  out of   3154    40%  
-   Number with an unused LUT:          1381  out of   3154    43%  
-   Number of fully used LUT-FF pairs:   494  out of   3154    15%  
-   Number of unique control sets:        81
+ Number of LUT Flip Flop pairs used:   3170
+   Number with an unused Flip Flop:    1330  out of   3170    41%  
+   Number with an unused LUT:          1378  out of   3170    43%  
+   Number of fully used LUT-FF pairs:   462  out of   3170    14%  
+   Number of unique control sets:        79
 
 IO Utilization: 
  Number of IOs:                         153
  Number of bonded IOBs:                  26  out of    200    13%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
 
 ---------------------------
 Partition Resource Summary:
@@ -700,18 +698,11 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------+
-Clock Signal                                                                                                                                                                           | Clock buffer(FF name)                                                      | Load  |
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------+
-processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>                                                                                                                       | BUFG                                                                       | 1858  |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o1:O)| BUFG(*)(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_mux_output_0)| 32    |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n0335111:O)                                                             | NONE(*)(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_2)    | 3     |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03301(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n0330111:O)                                                             | NONE(*)(axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/NS_2)                | 3     |
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+-------+
-(*) These 3 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+----------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                    | Clock buffer(FF name)  | Load  |
+----------------------------------------------------------------+------------------------+-------+
+processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>| BUFG                   | 1861  |
+----------------------------------------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -733,7 +724,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>'
   Clock period: 6.364ns (frequency: 157.122MHz)
-  Total number of paths / destination ports: 96830 / 3541
+  Total number of paths / destination ports: 103837 / 3550
 -------------------------------------------------------------------------
 Delay:               6.364ns (Levels of Logic = 11)
   Source:            axi_ppm_0/axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg (FF)
@@ -764,28 +755,6 @@ Delay:               6.364ns (Levels of Logic = 11)
                                        (15.5% logic, 84.5% route)
 
 =========================================================================
-Timing constraint: Default period analysis for Clock 'axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351'
-  Clock period: 1.414ns (frequency: 707.006MHz)
-  Total number of paths / destination ports: 6 / 3
--------------------------------------------------------------------------
-Delay:               1.414ns (Levels of Logic = 1)
-  Source:            axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 (LATCH)
-  Destination:       axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 (LATCH)
-  Source Clock:      axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351 falling
-  Destination Clock: axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351 falling
-
-  Data Path: axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 to axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q             68   0.389   0.559  axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 (axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0)
-     INV:I->O              1   0.067   0.399  axi_ppm_0/USER_LOGIC_I/our_generate/Madd_channel_select[2]_GND_54_o_add_39_OUT_xor<0>11_INV_0 (axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_GND_54_o_add_39_OUT<0>)
-     LDC:D                    -0.021          axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0
-    ----------------------------------------
-    Total                      1.414ns (0.456ns logic, 0.958ns route)
-                                       (32.2% logic, 67.8% route)
-
-=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>'
   Total number of paths / destination ports: 1561 / 1043
 -------------------------------------------------------------------------
@@ -803,7 +772,7 @@ Offset:              5.529ns (Levels of Logic = 12)
      begin scope: 'axi4lite_0:S_AXI_WDATA<3>'
      end scope: 'axi4lite_0:M_AXI_WDATA<99>'
      begin scope: 'axi_ppm_0:S_AXI_WDATA<3>'
-     LUT5:I0->O            1   0.053   0.413  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3_SW0 (N864)
+     LUT5:I0->O            1   0.053   0.413  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3_SW0 (N806)
      LUT6:I5->O            1   0.053   0.739  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3 (axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done2)
      LUT6:I0->O            6   0.053   0.635  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done8 (S_AXI_AWREADY)
      end scope: 'axi_ppm_0:S_AXI_WREADY'
@@ -866,7 +835,7 @@ Delay:               4.658ns (Levels of Logic = 11)
      begin scope: 'axi4lite_0:S_AXI_WDATA<3>'
      end scope: 'axi4lite_0:M_AXI_WDATA<99>'
      begin scope: 'axi_ppm_0:S_AXI_WDATA<3>'
-     LUT5:I0->O            1   0.053   0.413  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3_SW0 (N864)
+     LUT5:I0->O            1   0.053   0.413  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3_SW0 (N806)
      LUT6:I5->O            1   0.053   0.739  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3 (axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done2)
      LUT6:I0->O            6   0.053   0.635  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done8 (S_AXI_AWREADY)
      end scope: 'axi_ppm_0:S_AXI_WREADY'
@@ -887,55 +856,25 @@ Delay:               4.658ns (Levels of Logic = 11)
 Cross Clock Domains Report:
 --------------------------
 
-Clock to Setup on destination clock axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03301
------------------------------------------------------------------------------------------+---------+---------+---------+---------+
-                                                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351                               |         |         |    1.989|         |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o|         |         |   10.241|         |
-processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>                         |         |         |   10.260|         |
------------------------------------------------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351
-----------------------------------------------------------------+---------+---------+---------+---------+
-                                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351      |         |         |    1.414|         |
-processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|         |         |    1.840|         |
-----------------------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o
-----------------------------------------------------------------+---------+---------+---------+---------+
-                                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-----------------------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351      |         |         |    1.800|         |
-processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|         |         |    1.442|         |
-----------------------------------------------------------------+---------+---------+---------+---------+
-
 Clock to Setup on destination clock processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>
------------------------------------------------------------------------------------------+---------+---------+---------+---------+
-                                                                                         | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                                             |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
------------------------------------------------------------------------------------------+---------+---------+---------+---------+
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03301                               |         |    0.799|         |         |
-axi_ppm_0/axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o|         |    2.155|         |         |
-processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>                         |    6.364|         |         |         |
------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+----------------------------------------------------------------+---------+---------+---------+---------+
+                                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------------------------------------------+---------+---------+---------+---------+
+processing_system7_0/processing_system7_0/FCLK_CLK_unbuffered<0>|    6.364|         |         |         |
+----------------------------------------------------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 17.00 secs
-Total CPU time to Xst completion: 16.98 secs
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.27 secs
  
 --> 
 
-Total memory usage is 531272 kilobytes
+Total memory usage is 530248 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    8 (   0 filtered)
-Number of infos    :  448 (   0 filtered)
+Number of infos    :  447 (   0 filtered)
 

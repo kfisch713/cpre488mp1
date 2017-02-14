@@ -39,9 +39,9 @@ Timing constraint: TS_clk_fpga_0 = PERIOD TIMEGRP "clk_fpga_0" 100 MHz HIGH
 50%;
 For more information, see Period Analysis in the Timing Closure User Guide (UG612).
 
- 95260 paths analyzed, 5986 endpoints analyzed, 0 failing endpoints
+ 102267 paths analyzed, 6258 endpoints analyzed, 0 failing endpoints
  0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
- Minimum period is   9.848ns.
+ Minimum period is   9.722ns.
 --------------------------------------------------------------------------------
 
 
@@ -59,20 +59,20 @@ Timing summary:
 
 Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
 
-Constraints cover 95262 paths, 0 nets, and 9413 connections
+Constraints cover 102269 paths, 0 nets, and 10143 connections
 
 Design statistics:
-   Minimum period:   9.848ns   (Maximum frequency: 101.543MHz)
+   Minimum period:   9.722ns   (Maximum frequency: 102.859MHz)
 
 
-Analysis completed Mon Feb 13 13:54:30 2017 
+Analysis completed Tue Feb 14 04:40:06 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 650 MB
+Peak Memory Usage: 647 MB
 
 
 

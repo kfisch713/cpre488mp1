@@ -1,66 +1,845 @@
-11:54:20 **** Incremental Build of configuration Debug for project rc_control ****
+06:04:21 **** Incremental Build of configuration Debug for project rc_control ****
 make all 
 make: Nothing to be done for `all'.
-11:59:04 **** Incremental Build of configuration Debug for project rc_control ****
+06:04:23 **** Incremental Build of configuration Debug for project rc_control ****
 make all 
 make: Nothing to be done for `all'.
-12:17:27 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-12:21:30 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-12:25:21 **** Incremental Build of configuration Debug for project rc_control ****
+06:05:06 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63340	   2272	  29852	  95464	  174e8	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:05:08 **** Incremental Build of configuration Debug for project rc_control ****
 make all 
 make: Nothing to be done for `all'.
-12:55:37 **** Incremental Build of configuration Debug for project rc_control ****
+06:06:14 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63340	   2272	  29852	  95464	  174e8	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:06:17 **** Incremental Build of configuration Debug for project rc_control ****
 make all 
 make: Nothing to be done for `all'.
-13:33:39 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-13:34:50 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-13:34:51 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-13:34:52 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-13:34:52 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-13:34:53 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-13:34:53 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-13:36:30 **** Incremental Build of configuration Debug for project rc_control ****
+06:07:08 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63388	   2272	  29852	  95512	  17518	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:07:11 **** Incremental Build of configuration Debug for project rc_control ****
 make all 
 make: Nothing to be done for `all'.
-13:40:32 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-13:58:27 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-13:58:27 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-13:58:29 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-13:58:29 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-13:58:30 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-13:58:30 **** Auto Build of project system_bsp ****
-make -k all 
-'Finished building libraries'
-13:59:56 **** Incremental Build of configuration Debug for project rc_control ****
+06:07:56 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63284	   2272	  29852	  95408	  174b0	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:08:49 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63404	   2272	  29852	  95528	  17528	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:08:52 **** Incremental Build of configuration Debug for project rc_control ****
 make all 
 make: Nothing to be done for `all'.
+06:12:03 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'LED':
+../src/helloworld.c:53:10: error: expected expression before ')' token
+../src/helloworld.c:53:20: error: expected statement before ')' token
+../src/helloworld.c: In function 'SW':
+../src/helloworld.c:57:2: warning: return makes integer from pointer without a cast [enabled by default]
+../src/helloworld.c: In function 'BTN':
+../src/helloworld.c:61:2: warning: return makes integer from pointer without a cast [enabled by default]
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:74:14: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:76:20: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:46: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:54: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:62: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c: In function 'LED':
+../src/helloworld.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/helloworld.o] Error 1
+06:12:04 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'SW':
+../src/helloworld.c:57:2: warning: return makes integer from pointer without a cast [enabled by default]
+../src/helloworld.c: In function 'BTN':
+../src/helloworld.c:61:2: warning: return makes integer from pointer without a cast [enabled by default]
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:74:14: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:76:20: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:46: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:54: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:62: error: invalid type argument of unary '*' (have 'int')
+make: *** [src/helloworld.o] Error 1
+06:12:15 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:74:14: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:76:20: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:46: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:54: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:62: error: invalid type argument of unary '*' (have 'int')
+make: *** [src/helloworld.o] Error 1
+06:12:26 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:76:20: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:46: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:54: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:62: error: invalid type argument of unary '*' (have 'int')
+make: *** [src/helloworld.o] Error 1
+06:12:54 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:46: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:54: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:62: error: invalid type argument of unary '*' (have 'int')
+make: *** [src/helloworld.o] Error 1
+06:13:38 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'LED':
+../src/helloworld.c:53:17: error: invalid operands to binary >> (have 'volatile char *' and 'unsigned int')
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:46: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:54: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:62: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c: In function 'LED':
+../src/helloworld.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/helloworld.o] Error 1
+06:14:38 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'LED':
+../src/helloworld.c:53:17: error: invalid operands to binary >> (have 'char *' and 'int')
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:46: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:54: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:62: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c: In function 'LED':
+../src/helloworld.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/helloworld.o] Error 1
+06:14:46 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'LED':
+../src/helloworld.c:53:17: error: invalid operands to binary >> (have 'char *' and 'int')
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:46: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:54: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:62: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c: In function 'LED':
+../src/helloworld.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/helloworld.o] Error 1
+06:14:54 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'LED':
+../src/helloworld.c:53:17: error: invalid operands to binary >> (have 'char *' and 'int')
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:46: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:54: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:62: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c: In function 'LED':
+../src/helloworld.c:54:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/helloworld.o] Error 1
+06:15:33 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:46: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:54: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:62: error: invalid type argument of unary '*' (have 'int')
+make: *** [src/helloworld.o] Error 1
+06:15:40 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:46: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:54: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:62: error: invalid type argument of unary '*' (have 'int')
+make: *** [src/helloworld.o] Error 1
+06:16:55 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:46: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:54: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:62: error: invalid type argument of unary '*' (have 'int')
+make: *** [src/helloworld.o] Error 1
+06:17:06 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:46: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:54: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:62: error: invalid type argument of unary '*' (have 'int')
+make: *** [src/helloworld.o] Error 1
+06:17:15 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:103:46: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:54: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:103:62: error: invalid type argument of unary '*' (have 'int')
+make: *** [src/helloworld.o] Error 1
+06:17:26 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63412	   2272	  29852	  95536	  17530	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:17:31 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+06:18:09 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:92:7: error: invalid type argument of unary '*' (have 'int')
+../src/helloworld.c:96:7: error: invalid type argument of unary '*' (have 'int')
+make: *** [src/helloworld.o] Error 1
+06:18:20 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:96:7: error: invalid type argument of unary '*' (have 'int')
+make: *** [src/helloworld.o] Error 1
+06:18:24 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:96:7: error: invalid type argument of unary '*' (have 'int')
+make: *** [src/helloworld.o] Error 1
+06:18:27 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63396	   2272	  29852	  95520	  17520	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:18:29 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+06:19:15 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63460	   2272	  29852	  95584	  17560	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:19:18 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+06:19:49 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63468	   2272	  29852	  95592	  17568	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:19:52 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63460	   2272	  29852	  95584	  17560	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:19:56 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+06:20:17 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63444	   2272	  29852	  95568	  17550	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:20:28 **** Incremental Build of configuration Debug for project rc_control ****
+make all 
+make: Nothing to be done for `all'.
+06:22:32 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63444	   2272	  29852	  95568	  17550	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:23:18 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:73: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:62: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:51: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:40: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:29: warning: unused variable 'channel_1' [-Wunused-variable]
+../src/helloworld.c:72:18: warning: unused variable 'channel_0' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63444	   2272	  29884	  95600	  17570	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:23:23 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:73: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:62: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:51: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:40: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:29: warning: unused variable 'channel_1' [-Wunused-variable]
+../src/helloworld.c:72:18: warning: unused variable 'channel_0' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63444	   2272	  29884	  95600	  17570	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:23:30 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:77: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:66: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:55: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:44: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:33: warning: unused variable 'channel_1' [-Wunused-variable]
+../src/helloworld.c:72:18: warning: unused variable 'channel_0' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63444	   2272	  29884	  95600	  17570	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:23:32 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:81: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:70: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:59: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:48: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:33: warning: unused variable 'channel_1' [-Wunused-variable]
+../src/helloworld.c:72:18: warning: unused variable 'channel_0' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63444	   2272	  29884	  95600	  17570	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:23:36 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:85: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:74: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:63: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:48: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:33: warning: unused variable 'channel_1' [-Wunused-variable]
+../src/helloworld.c:72:18: warning: unused variable 'channel_0' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63444	   2272	  29884	  95600	  17570	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:23:38 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:89: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:78: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:63: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:48: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:33: warning: unused variable 'channel_1' [-Wunused-variable]
+../src/helloworld.c:72:18: warning: unused variable 'channel_0' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63444	   2272	  29884	  95600	  17570	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:23:41 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:93: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:78: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:63: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:48: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:33: warning: unused variable 'channel_1' [-Wunused-variable]
+../src/helloworld.c:72:18: warning: unused variable 'channel_0' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63444	   2272	  29884	  95600	  17570	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:24:40 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:93: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:78: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:63: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:48: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:33: warning: unused variable 'channel_1' [-Wunused-variable]
+../src/helloworld.c:72:18: warning: unused variable 'channel_0' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63452	   2272	  29884	  95608	  17578	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:25:08 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:93: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:78: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:63: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:48: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:33: warning: unused variable 'channel_1' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63548	   2272	  29884	  95704	  175d8	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:25:14 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:93: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:78: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:63: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:48: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:33: warning: unused variable 'channel_1' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63548	   2272	  29884	  95704	  175d8	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:25:17 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:93: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:78: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:63: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:48: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:33: warning: unused variable 'channel_1' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63548	   2272	  29884	  95704	  175d8	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:26:51 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:93: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:78: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:63: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:48: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:33: warning: unused variable 'channel_1' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63580	   2272	  29884	  95736	  175f8	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:29:25 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:95:4: warning: format '%f' expects a matching 'float *' argument [-Wformat]
+../src/helloworld.c:95:4: warning: format '%f' expects a matching 'float *' argument [-Wformat]
+../src/helloworld.c:97:3: error: expected ';' before '}' token
+../src/helloworld.c:72:90: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:75: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:60: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:45: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:30: warning: unused variable 'channel_1' [-Wunused-variable]
+make: *** [src/helloworld.o] Error 1
+06:29:45 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:90: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:75: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:60: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:45: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:30: warning: unused variable 'channel_1' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  96664	   2320	  30140	 129124	  1f864	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:30:19 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  96928	   2320	  30140	 129388	  1f96c	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:30:23 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  96928	   2320	  30140	 129388	  1f96c	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
+06:31:19 **** Auto Build of configuration Debug for project rc_control ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:90: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:75: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:60: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:45: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:30: warning: unused variable 'channel_1' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63548	   2272	  29884	  95704	  175d8	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '

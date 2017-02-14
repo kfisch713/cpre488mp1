@@ -98,8 +98,8 @@ entity user_logic is
   (
     -- ADD USER PORTS BELOW THIS LINE ------------------
     --USER ports added here
-		PPM_INPUT : in std_logic;
-	    PPM_OUTPUT : out std_logic;
+	 PPM_INPUT : in std_logic;
+	 PPM_OUTPUT : out std_logic;
     -- ADD USER PORTS ABOVE THIS LINE ------------------
 
     -- DO NOT EDIT BELOW THIS LINE ---------------------
@@ -122,6 +122,7 @@ entity user_logic is
 
   attribute SIGIS of Bus2IP_Clk    : signal is "CLK";
   attribute SIGIS of Bus2IP_Resetn : signal is "RST";
+  attribute keep : string;
 
 end entity user_logic;
 
@@ -202,6 +203,8 @@ architecture IMP of user_logic is
   signal slv_read_ack                   : std_logic;
   signal slv_write_ack                  : std_logic;
 
+  attribute keep of frame_counter: signal is "true";
+  attribute keep of slv_reg1 : signal is "true";
 begin
 
   --USER logic implementation added here
@@ -248,7 +251,7 @@ begin
 	end process;
 	
 	--sync process
-	process(Bus2IP_Clk)
+	process(Bus2IP_Clk, next_frame_counter, next_slv_reg1)
 	begin
 		if rising_edge(Bus2IP_Clk) then
 			frame_counter <= next_frame_counter;

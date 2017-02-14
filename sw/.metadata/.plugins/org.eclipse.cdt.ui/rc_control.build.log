@@ -1,6 +1,27 @@
-13:59:56 **** Incremental Build of configuration Debug for project rc_control ****
+06:31:19 **** Auto Build of configuration Debug for project rc_control ****
 make all 
-make: Nothing to be done for `all'.
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../system_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:90: warning: unused variable 'channel_5' [-Wunused-variable]
+../src/helloworld.c:72:75: warning: unused variable 'channel_4' [-Wunused-variable]
+../src/helloworld.c:72:60: warning: unused variable 'channel_3' [-Wunused-variable]
+../src/helloworld.c:72:45: warning: unused variable 'channel_2' [-Wunused-variable]
+../src/helloworld.c:72:30: warning: unused variable 'channel_1' [-Wunused-variable]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: rc_control.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "rc_control.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: rc_control.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size rc_control.elf  |tee "rc_control.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  63548	   2272	  29884	  95704	  175d8	rc_control.elf
+'Finished building: rc_control.elf.size'
+' '
 
-13:59:57 Build Finished (took 230ms)
+06:31:20 Build Finished (took 1s.425ms)
 

@@ -3,8 +3,8 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to U:\Documents\cpre488mp1\system\synthesis\xst_temp_dir\
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.29 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> 
 TABLE OF CONTENTS
@@ -533,9 +533,6 @@ Elaborating entity <user_logic> (architecture <IMP>) with generics from library 
 Elaborating entity <ppm_capture> (architecture <ppm_capture_arch>) from library <axi_ppm_v1_00_a>.
 
 Elaborating entity <ppm_generate> (architecture <ppm_generate_arch>) from library <axi_ppm_v1_00_a>.
-WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/burneykb/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_generate.vhd" Line 104: channel_select should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/burneykb/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_generate.vhd" Line 185: channel_select should be on the sensitivity list of the process
-WARNING:HDLCompiler:92 - "//my.files.iastate.edu/users/burneykb/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_generate.vhd" Line 188: channel_select should be on the sensitivity list of the process
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -1040,6 +1037,8 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
         C_NUM_REG = 32
         C_SLV_DWIDTH = 32
+    Set property "KEEP = TRUE" for signal <frame_counter>.
+    Set property "KEEP = TRUE" for signal <slv_reg1>.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
 WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
     Found 32-bit register for signal <slv_reg1>.
@@ -1069,7 +1068,8 @@ WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/p
     Found 32-bit register for signal <slv_reg30>.
     Found 32-bit register for signal <slv_reg31>.
     Found 32-bit register for signal <frame_counter>.
-    Found 32-bit adder for signal <frame_counter[31]_GND_52_o_add_0_OUT> created at line 235.
+    Found 32-bit adder for signal <frame_counter[31]_GND_52_o_add_0_OUT> created at line 238.
+INFO:Xst:2774 - HDL ADVISOR - KEEP property attached to signal frame_counter may hinder XST clustering optimizations.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred 864 D-type flip-flop(s).
@@ -1078,6 +1078,13 @@ Unit <user_logic> synthesized.
 
 Synthesizing Unit <ppm_capture>.
     Related source file is "//my.files.iastate.edu/users/burneykb/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_capture.vhd".
+    Set property "KEEP = TRUE" for signal <slv_reg10>.
+    Set property "KEEP = TRUE" for signal <slv_reg11>.
+    Set property "KEEP = TRUE" for signal <slv_reg12>.
+    Set property "KEEP = TRUE" for signal <slv_reg13>.
+    Set property "KEEP = TRUE" for signal <slv_reg14>.
+    Set property "KEEP = TRUE" for signal <slv_reg15>.
+    Set property "KEEP = TRUE" for signal <channel_mux_select>.
     Found 3-bit register for signal <channel_mux_select>.
     Found 32-bit register for signal <tmp_reg_0>.
     Found 32-bit register for signal <tmp_reg_1>.
@@ -1107,7 +1114,7 @@ Synthesizing Unit <ppm_capture>.
     -----------------------------------------------------------------------
     Found 32-bit adder for signal <timer_counter[31]_GND_53_o_add_53_OUT> created at line 1241.
     Found 3-bit adder for signal <channel_mux_select[2]_GND_53_o_add_58_OUT> created at line 1241.
-    Found 32-bit comparator lessequal for signal <n0056> created at line 208
+    Found 32-bit comparator lessequal for signal <n0056> created at line 218
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred 451 D-type flip-flop(s).
@@ -1119,102 +1126,42 @@ Unit <ppm_capture> synthesized.
 Synthesizing Unit <ppm_generate>.
     Related source file is "//my.files.iastate.edu/users/burneykb/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/hdl/vhdl/ppm_generate.vhd".
     Found 3-bit register for signal <PS>.
+    Found 3-bit register for signal <channel_select>.
     Found 32-bit register for signal <low_counter_data_minus1>.
     Found 32-bit register for signal <slv_reg_data_minus1>.
     Found 32-bit register for signal <timer_20_ms>.
+    Found finite state machine <FSM_2> for signal <PS>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | GND_54_o_timer_20_ms[31]_LessThan_2_o (positive)       |
+    | Reset type         | synchronous                                    |
+    | Reset State        | s1a                                            |
+    | Power Up State     | s1a                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
     Found 32-bit adder for signal <timer_20_ms[31]_GND_54_o_add_0_OUT> created at line 1241.
-    Found 3-bit adder for signal <channel_select[2]_GND_54_o_add_39_OUT> created at line 1241.
-    Found 32-bit subtractor for signal <GND_54_o_GND_54_o_sub_37_OUT<31:0>> created at line 1308.
-    Found 32-bit subtractor for signal <GND_54_o_GND_54_o_sub_43_OUT<31:0>> created at line 1308.
-    Found 8x4-bit Read Only RAM for signal <_n0330>
-    Found 4x2-bit Read Only RAM for signal <_n0335>
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[31]_MUX_204_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[30]_MUX_210_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[29]_MUX_216_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[28]_MUX_222_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[27]_MUX_228_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[26]_MUX_234_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[25]_MUX_240_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[24]_MUX_246_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[23]_MUX_252_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[22]_MUX_258_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[21]_MUX_264_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[20]_MUX_270_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[19]_MUX_276_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[18]_MUX_282_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[17]_MUX_288_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[16]_MUX_294_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[15]_MUX_300_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[14]_MUX_306_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[13]_MUX_312_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[12]_MUX_318_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[11]_MUX_324_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[10]_MUX_330_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[9]_MUX_336_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[8]_MUX_342_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[7]_MUX_348_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[6]_MUX_354_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[5]_MUX_360_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[4]_MUX_366_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[3]_MUX_372_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[2]_MUX_378_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[1]_MUX_384_o> created at line 133.
-    Found 1-bit 6-to-1 multiplexer for signal <channel_mux_output[31]_slv_reg20[0]_MUX_390_o> created at line 133.
-WARNING:Xst:737 - Found 1-bit latch for signal <NS<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <NS<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <NS<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_mux_output<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_select<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_select<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <channel_select<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 32-bit comparator greater for signal <GND_54_o_timer_20_ms[31]_LessThan_2_o> created at line 42
+    Found 3-bit adder for signal <channel_select[2]_GND_54_o_add_34_OUT> created at line 1241.
+    Found 32-bit subtractor for signal <GND_54_o_GND_54_o_sub_32_OUT<31:0>> created at line 1308.
+    Found 32-bit subtractor for signal <GND_54_o_GND_54_o_sub_38_OUT<31:0>> created at line 1308.
+    Found 32-bit 7-to-1 multiplexer for signal <channel_mux_output> created at line 21.
+    Found 32-bit comparator greater for signal <GND_54_o_timer_20_ms[31]_LessThan_2_o> created at line 44
     Summary:
-	inferred   2 RAM(s).
 	inferred   4 Adder/Subtractor(s).
 	inferred  99 D-type flip-flop(s).
-	inferred  38 Latch(s).
 	inferred   1 Comparator(s).
-	inferred  43 Multiplexer(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
 Unit <ppm_generate> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
- 4x2-bit single-port Read Only RAM                     : 1
- 8x4-bit single-port Read Only RAM                     : 1
 # Adders/Subtractors                                   : 8
  3-bit adder                                           : 2
  32-bit adder                                          : 3
@@ -1226,16 +1173,14 @@ Macro Statistics
  3-bit register                                        : 2
  32-bit register                                       : 45
  4-bit register                                        : 1
-# Latches                                              : 38
- 1-bit latch                                           : 38
 # Comparators                                          : 2
  32-bit comparator greater                             : 1
  32-bit comparator lessequal                           : 1
-# Multiplexers                                         : 883
- 1-bit 2-to-1 multiplexer                              : 846
- 1-bit 6-to-1 multiplexer                              : 32
+# Multiplexers                                         : 843
+ 1-bit 2-to-1 multiplexer                              : 837
  32-bit 2-to-1 multiplexer                             : 5
-# FSMs                                                 : 2
+ 32-bit 7-to-1 multiplexer                             : 1
+# FSMs                                                 : 3
 
 =========================================================================
 
@@ -1245,33 +1190,11 @@ Macro Statistics
 
 
 Synthesizing (advanced) Unit <ppm_capture>.
-The following registers are absorbed into counter <channel_mux_select>: 1 register on signal <channel_mux_select>.
 Unit <ppm_capture> synthesized (advanced).
 
 Synthesizing (advanced) Unit <ppm_generate>.
 The following registers are absorbed into counter <timer_20_ms>: 1 register on signal <timer_20_ms>.
-INFO:Xst:3231 - The small RAM <Mram__n0330> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 8-word x 4-bit                      |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <PS>            |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
-INFO:Xst:3231 - The small RAM <Mram__n0335> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
-    -----------------------------------------------------------------------
-    | ram_type           | Distributed                         |          |
-    -----------------------------------------------------------------------
-    | Port A                                                              |
-    |     aspect ratio   | 4-word x 2-bit                      |          |
-    |     weA            | connected to signal <GND>           | high     |
-    |     addrA          | connected to signal <PS<1:0>>       |          |
-    |     diA            | connected to signal <GND>           |          |
-    |     doA            | connected to internal node          |          |
-    -----------------------------------------------------------------------
+The following registers are absorbed into counter <channel_select>: 1 register on signal <channel_select>.
 Unit <ppm_generate> synthesized (advanced).
 
 Synthesizing (advanced) Unit <slave_attachment>.
@@ -1279,34 +1202,30 @@ The following registers are absorbed into counter <INCLUDE_DPHASE_TIMER.dpto_cnt
 Unit <slave_attachment> synthesized (advanced).
 
 Synthesizing (advanced) Unit <user_logic>.
-The following registers are absorbed into counter <frame_counter>: 1 register on signal <frame_counter>.
 Unit <user_logic> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# RAMs                                                 : 2
- 4x2-bit single-port distributed Read Only RAM         : 1
- 8x4-bit single-port distributed Read Only RAM         : 1
-# Adders/Subtractors                                   : 4
+# Adders/Subtractors                                   : 5
  3-bit adder                                           : 1
- 32-bit adder                                          : 1
+ 32-bit adder                                          : 2
  32-bit subtractor                                     : 2
-# Counters                                             : 4
+# Counters                                             : 3
  3-bit up counter                                      : 1
- 32-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
  4-bit up counter                                      : 1
-# Registers                                            : 1433
- Flip-Flops                                            : 1433
+# Registers                                            : 1465
+ Flip-Flops                                            : 1465
 # Comparators                                          : 2
  32-bit comparator greater                             : 1
  32-bit comparator lessequal                           : 1
-# Multiplexers                                         : 848
- 1-bit 2-to-1 multiplexer                              : 811
- 1-bit 6-to-1 multiplexer                              : 32
+# Multiplexers                                         : 808
+ 1-bit 2-to-1 multiplexer                              : 802
  32-bit 2-to-1 multiplexer                             : 5
-# FSMs                                                 : 2
+ 32-bit 7-to-1 multiplexer                             : 1
+# FSMs                                                 : 3
 
 =========================================================================
 
@@ -1339,6 +1258,19 @@ Optimizing FSM <axi_ppm_0/USER_LOGIC_I/our_capture/FSM_1> on signal <PS[1:7]> wi
  s3b   | 1000000
  s4    | 0100000
 -------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <axi_ppm_0/USER_LOGIC_I/our_generate/FSM_2> on signal <PS[1:3]> with gray encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ s1a           | 000
+ s1b           | 001
+ s2a_quick_fix | 011
+ s2a           | 010
+ s2b           | 110
+ s2c           | 111
+ s3            | 101
+---------------------------
 
 Optimizing unit <system_axi_ppm_0_wrapper> ...
 
@@ -1386,8 +1318,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1510
- Flip-Flops                                            : 1510
+# Registers                                            : 1513
+ Flip-Flops                                            : 1513
 
 =========================================================================
 
@@ -1410,28 +1342,24 @@ Top Level Output File Name         : system_axi_ppm_0_wrapper.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1505
+# BELS                             : 1524
 #      GND                         : 1
 #      INV                         : 7
 #      LUT1                        : 83
-#      LUT2                        : 81
-#      LUT3                        : 20
-#      LUT4                        : 150
-#      LUT5                        : 173
-#      LUT6                        : 671
+#      LUT2                        : 80
+#      LUT3                        : 52
+#      LUT4                        : 109
+#      LUT5                        : 141
+#      LUT6                        : 732
 #      MUXCY                       : 157
 #      MUXF7                       : 12
 #      VCC                         : 1
 #      XORCY                       : 149
-# FlipFlops/Latches                : 1548
-#      FD                          : 152
+# FlipFlops/Latches                : 1513
+#      FD                          : 155
 #      FDE                         : 448
-#      FDR                         : 42
-#      FDRE                        : 868
-#      LD                          : 35
-#      LDC                         : 3
-# Clock Buffers                    : 1
-#      BUFG                        : 1
+#      FDR                         : 39
+#      FDRE                        : 871
 
 Device utilization summary:
 ---------------------------
@@ -1440,23 +1368,22 @@ Selected Device : 7z020clg484-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            1548  out of  106400     1%  
- Number of Slice LUTs:                 1185  out of  53200     2%  
-    Number used as Logic:              1185  out of  53200     2%  
+ Number of Slice Registers:            1513  out of  106400     1%  
+ Number of Slice LUTs:                 1204  out of  53200     2%  
+    Number used as Logic:              1204  out of  53200     2%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2384
-   Number with an unused Flip Flop:     836  out of   2384    35%  
-   Number with an unused LUT:          1199  out of   2384    50%  
-   Number of fully used LUT-FF pairs:   349  out of   2384    14%  
-   Number of unique control sets:        43
+ Number of LUT Flip Flop pairs used:   2453
+   Number with an unused Flip Flop:     940  out of   2453    38%  
+   Number with an unused LUT:          1249  out of   2453    50%  
+   Number of fully used LUT-FF pairs:   264  out of   2453    10%  
+   Number of unique control sets:        41
 
 IO Utilization: 
  Number of IOs:                         150
  Number of bonded IOBs:                   0  out of    200     0%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
 
 ---------------------------
 Partition Resource Summary:
@@ -1476,17 +1403,11 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------+
-Clock Signal                                                                                                                                                       | Clock buffer(FF name)                                            | Load  |
--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------+
-S_AXI_ACLK                                                                                                                                                         | NONE(axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 1510  |
-axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o(axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o1:O)| BUFG(*)(axi_ppm_0/USER_LOGIC_I/our_generate/channel_mux_output_0)| 32    |
-axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351(axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n0335111:O)                                                             | NONE(*)(axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_2)    | 3     |
-axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03301(axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n0330111:O)                                                             | NONE(*)(axi_ppm_0/USER_LOGIC_I/our_generate/NS_2)                | 3     |
--------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+-------+
-(*) These 3 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+-----------------------------------+------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                            | Load  |
+-----------------------------------+------------------------------------------------------------------+-------+
+S_AXI_ACLK                         | NONE(axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/state_FSM_FFd1)| 1513  |
+-----------------------------------+------------------------------------------------------------------+-------+
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
@@ -1509,7 +1430,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'S_AXI_ACLK'
   Clock period: 4.270ns (frequency: 234.166MHz)
-  Total number of paths / destination ports: 85080 / 2923
+  Total number of paths / destination ports: 92087 / 2932
 -------------------------------------------------------------------------
 Delay:               4.270ns (Levels of Logic = 7)
   Source:            axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2 (FF)
@@ -1523,38 +1444,16 @@ Delay:               4.270ns (Levels of Logic = 7)
     ----------------------------------------  ------------
      FD:C->Q               6   0.282   0.518  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2 (axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg_2)
      LUT2:I0->O           43   0.053   0.790  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i<2>1 (axi_ppm_0/ipif_Bus2IP_RdCE<30>)
-     LUT6:I2->O            1   0.053   0.000  axi_ppm_0/USER_LOGIC_I/GND_52_o_slv_reg_read_sel[31]_equal_121_o<31>_SW0_F (N922)
+     LUT6:I2->O            1   0.053   0.000  axi_ppm_0/USER_LOGIC_I/GND_52_o_slv_reg_read_sel[31]_equal_121_o<31>_SW0_F (N834)
      MUXF7:I0->O           1   0.214   0.485  axi_ppm_0/USER_LOGIC_I/GND_52_o_slv_reg_read_sel[31]_equal_121_o<31>_SW0 (N22)
      LUT6:I4->O           32   0.053   0.755  axi_ppm_0/USER_LOGIC_I/GND_52_o_slv_reg_read_sel[31]_equal_121_o<31> (axi_ppm_0/USER_LOGIC_I/GND_52_o_slv_reg_read_sel[31]_equal_121_o)
-     LUT6:I3->O            1   0.053   0.485  axi_ppm_0/Mmux_ipif_IP2Bus_Data116_SW0 (N422)
+     LUT6:I3->O            1   0.053   0.485  axi_ppm_0/Mmux_ipif_IP2Bus_Data116_SW0 (N358)
      LUT6:I4->O            1   0.053   0.413  axi_ppm_0/Mmux_ipif_IP2Bus_Data116 (axi_ppm_0/Mmux_ipif_IP2Bus_Data16)
      LUT6:I5->O            1   0.053   0.000  axi_ppm_0/Mmux_ipif_IP2Bus_Data125 (axi_ppm_0/ipif_IP2Bus_Data<0>)
      FDRE:D                    0.011          axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_0
     ----------------------------------------
     Total                      4.270ns (0.825ns logic, 3.445ns route)
                                        (19.3% logic, 80.7% route)
-
-=========================================================================
-Timing constraint: Default period analysis for Clock 'axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351'
-  Clock period: 1.414ns (frequency: 707.006MHz)
-  Total number of paths / destination ports: 6 / 3
--------------------------------------------------------------------------
-Delay:               1.414ns (Levels of Logic = 1)
-  Source:            axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 (LATCH)
-  Destination:       axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 (LATCH)
-  Source Clock:      axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351 falling
-  Destination Clock: axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351 falling
-
-  Data Path: axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 to axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LDC:G->Q             68   0.389   0.559  axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0 (axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0)
-     INV:I->O              1   0.067   0.399  axi_ppm_0/USER_LOGIC_I/our_generate/Madd_channel_select[2]_GND_54_o_add_39_OUT_xor<0>11_INV_0 (axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_GND_54_o_add_39_OUT<0>)
-     LDC:D                    -0.021          axi_ppm_0/USER_LOGIC_I/our_generate/channel_select_0
-    ----------------------------------------
-    Total                      1.414ns (0.456ns logic, 0.958ns route)
-                                       (32.2% logic, 67.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'S_AXI_ACLK'
@@ -1569,7 +1468,7 @@ Offset:              2.819ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT5:I0->O            1   0.053   0.413  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3_SW0 (N864)
+     LUT5:I0->O            1   0.053   0.413  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3_SW0 (N806)
      LUT6:I5->O            1   0.053   0.739  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3 (axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done2)
      LUT6:I0->O            3   0.053   0.499  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done8 (S_AXI_AWREADY)
      LUT4:I2->O           34   0.053   0.566  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_ce_clr1 (axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_ce_clr)
@@ -1613,7 +1512,7 @@ Delay:               1.637ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LUT5:I0->O            1   0.053   0.413  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3_SW0 (N864)
+     LUT5:I0->O            1   0.053   0.413  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3_SW0 (N806)
      LUT6:I5->O            1   0.053   0.739  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done3 (axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done2)
      LUT6:I0->O            3   0.053   0.000  axi_ppm_0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/wr_done8 (S_AXI_AWREADY)
     ----------------------------------------
@@ -1626,54 +1525,24 @@ Cross Clock Domains Report:
 --------------------------
 
 Clock to Setup on destination clock S_AXI_ACLK
--------------------------------------------------------------------------------+---------+---------+---------+---------+
-                                                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------------------------------------------------------------------+---------+---------+---------+---------+
-S_AXI_ACLK                                                                     |    4.270|         |         |         |
-axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03301                               |         |    0.799|         |         |
-axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o|         |    2.155|         |         |
--------------------------------------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03301
--------------------------------------------------------------------------------+---------+---------+---------+---------+
-                                                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
--------------------------------------------------------------------------------+---------+---------+---------+---------+
-S_AXI_ACLK                                                                     |         |         |   10.260|         |
-axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351                               |         |         |    1.989|         |
-axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o|         |         |   10.241|         |
--------------------------------------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351
-------------------------------------------------+---------+---------+---------+---------+
-                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------------------------------+---------+---------+---------+---------+
-S_AXI_ACLK                                      |         |         |    1.840|         |
-axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351|         |         |    1.414|         |
-------------------------------------------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock axi_ppm_0/USER_LOGIC_I/our_generate/channel_select[2]_channel_select[2]_OR_26_o
-------------------------------------------------+---------+---------+---------+---------+
-                                                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock                                    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
-------------------------------------------------+---------+---------+---------+---------+
-S_AXI_ACLK                                      |         |         |    1.442|         |
-axi_ppm_0/USER_LOGIC_I/our_generate/Mram__n03351|         |         |    1.800|         |
-------------------------------------------------+---------+---------+---------+---------+
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+S_AXI_ACLK     |    4.270|         |         |         |
+---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 25.00 secs
-Total CPU time to Xst completion: 24.77 secs
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.52 secs
  
 --> 
 
-Total memory usage is 542920 kilobytes
+Total memory usage is 545096 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   70 (   0 filtered)
-Number of infos    :    8 (   0 filtered)
+Number of warnings :   29 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
 

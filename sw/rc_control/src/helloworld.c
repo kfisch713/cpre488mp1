@@ -35,56 +35,65 @@
 #include "platform.h"
 #include <xparameters.h>
 #include <limits.h>
+#include <stdint.h>
 
-#define SLV_REG(x) ((XPAR_AXI_PPM_0_BASEADDR) + (x * 4))
+#define ONE_MS 0x186a0
 
-volatile char *LEDs = XPAR_LEDS_8BITS_BASEADDR;
-volatile char *SWs = XPAR_SWS_8BITS_BASEADDR;
+#define MS(x) (ONE_MS * x)
 
-volatile int *slv_reg0 = SLV_REG(0);
-volatile int *slv_reg1 = SLV_REG(1);
-volatile int *slv_reg10 = SLV_REG(10);
-volatile int *slv_reg11 = SLV_REG(11);
-volatile int *slv_reg12 = SLV_REG(12);
-volatile int *slv_reg13 = SLV_REG(13);
-volatile int *slv_reg14 = SLV_REG(14);
-volatile int *slv_reg15 = SLV_REG(15);
+char *LEDs = (char *)XPAR_LEDS_8BITS_BASEADDR;
+char *SWs = (char *)XPAR_SWS_8BITS_BASEADDR;
+char *BTNs = (char *)XPAR_BTNS_5BITS_BASEADDR;
 
-volatile int *slv_reg20 = SLV_REG(20);
-volatile int *slv_reg21 = SLV_REG(21);
-volatile int *slv_reg22 = SLV_REG(22);
-volatile int *slv_reg23 = SLV_REG(23);
-volatile int *slv_reg24 = SLV_REG(24);
-volatile int *slv_reg25 = SLV_REG(25);
+int * SLV_REG(unsigned int x){
+	return ((int *)((XPAR_AXI_PPM_0_BASEADDR) + (x * 4)));
+}
 
-void print(char *str);
+int LED(char x) {
+	return ((*LEDs >> x) & 0x01);
+}
+
+int SW(unsigned int x) {
+	return ((*SWs >> x) & 0x01);
+}
+
+int BTN(unsigned int x) {
+	return ((*BTNs >> x) & 0x01);
+}
+
+void printStatus() {
+	printf("Control mode : %d\nFrame Counter : %d\n", *SLV_REG(0), *SLV_REG(1));
+	printf("%d, %d, %d, %d, %d, %d\n", *SLV_REG(10), *SLV_REG(11), *SLV_REG(12), *SLV_REG(13), *SLV_REG(14), *SLV_REG(15));
+	printf("%d, %d, %d, %d, %d, %d\n", *SLV_REG(20), *SLV_REG(21), *SLV_REG(22), *SLV_REG(23), *SLV_REG(24), *SLV_REG(25));
+}
 
 int main()
 {
+	static float channel_0 = 0, channel_1 = 0, channel_2 = 0, channel_3 = 0, channel_4 = 0, channel_5 = 0;
     init_platform();
 
-    print("Hello World\n\r");
-    printf("made it!!!!!\n");
+	printf("\033\143");
+	printf("Welcome to quad sim -4.0\n");
+	printf("\033\143");
+    while (!(BTN(0))){
+    	//1 == software, 0 == hardware
+    	*SLV_REG(0) = SW(0);
 
-	//1 == software, 0 == hardware
-	*slv_reg0 = 0;
-	int old_reg1 = INT_MAX;
-    //capture
-    while(!(*SWs & 0x8)){
-    	*slv_reg0 = (*SWs & 0x01);
+    	// Software passthrough..doesn't work. So I'm supplying my own signal
+		*SLV_REG(20) = MS(channel_0);
+		*SLV_REG(21) = MS(channel_0);
+		*SLV_REG(22) = MS(channel_0);
+		*SLV_REG(23) = MS(channel_0);
+		*SLV_REG(24) = MS(channel_0);
+		*SLV_REG(25) = MS(channel_0);
 
-    	if (*slv_reg1 != old_reg1) {
-    		*slv_reg20 = *slv_reg10;
-			*slv_reg21 = *slv_reg11;
-			*slv_reg22 = *slv_reg12;
-			*slv_reg23 = *slv_reg13;
-			*slv_reg24 = *slv_reg14;
-			*slv_reg25 = *slv_reg15;
-			old_reg1 = *slv_reg1;
-    	}
+		if (SW(1)) {
+			printStatus();
+		} else if (SW(2)) {
+			printf("recording...\n");
+		}
 
-    	printf("%d\t%d\t%d\t%d\t%d\t%d\t%d\n", *slv_reg0, *slv_reg10, *slv_reg11, *slv_reg12, *slv_reg13, *slv_reg14, *slv_reg15);
-    	fflush(stdout);
     }
+    printf("BTNC press recognized...\n");
     return 0;
 }

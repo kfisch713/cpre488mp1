@@ -30,6 +30,16 @@ architecture ppm_capture_arch of ppm_capture is
 	type state_type is (S1a, S1b, S1c, S2, S3a, S3b, S4);
 	signal PS, NS : state_type;
 	
+	attribute keep : string;
+	
+	
+	attribute keep of channel_mux_select : signal is "true";
+	attribute keep of slv_reg10 : signal is "true";
+	attribute keep of slv_reg11 : signal is "true";
+	attribute keep of slv_reg12 : signal is "true";
+	attribute keep of slv_reg13: signal is "true";
+	attribute keep of slv_reg14: signal is "true";
+	attribute keep of slv_reg15: signal is "true";
 	begin
 	
 	--FSM sync process
@@ -205,7 +215,7 @@ architecture ppm_capture_arch of ppm_capture is
 				next_timer_counter <= (others => '0');
 			end if;
 			
-			if(timer_counter >= 800000) then
+			if(timer_counter >= 500000) then
 				timer_reached_idle_state <= '1';
 			else
 				timer_reached_idle_state <= '0';

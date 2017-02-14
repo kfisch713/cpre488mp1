@@ -7,13 +7,64 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dU:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav
+Z0 dU:/Documents/cpre488mp1/system/pcores/axi_ppm_v1_00_a/devl/projnav
 T_opt
-!s110 1487007230
-Va<m7O69b9Z22mc42:JG3T1
-015 10 3 axi_ppm_v1_00_a user_logic imp 1
-=1-484d7ed43b08-58a1edfd-347-1b6b0
-o-quiet -auto_acc_if_foreign -work work +acc
-tCvgOpt 0
+!s110 1487071683
+V3cd00]Y_3g8VU?91<hbIE1
+015 11 16 axi_ppm_v1_00_a ppm_capture ppm_capture_arch 1
+=1-1866da19cd92-58a2e9c3-12d-8088
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
 n@_opt
-OL;O;10.5b;63
+Z3 OL;O;10.5b;63
+R0
+T_opt1
+!s110 1487072227
+VXjUAhFFiFzP<TeDLR<N1F1
+015 10 3 axi_ppm_v1_00_a user_logic imp 1
+=1-1866da19cd92-58a2ebe1-391-7388
+R1
+R2
+n@_opt1
+R3
+Eppm_generate
+Z4 w1487072211
+Z5 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z8 8../../hdl/vhdl/PPM_generate.vhd
+Z9 F../../hdl/vhdl/PPM_generate.vhd
+l0
+L6
+V^k4Vo3@gFdMGdl`:P:OO_0
+!s100 m_0_GW[XURhbg5]@NS7lU1
+Z10 OL;C;10.5b;63
+31
+Z11 !s110 1487072224
+!i10b 1
+Z12 !s108 1487072224.000000
+Z13 !s90 -reportprogress|300|-explicit|-93|../../hdl/vhdl/PPM_generate.vhd|
+Z14 !s107 ../../hdl/vhdl/PPM_generate.vhd|
+!i113 0
+Z15 o-explicit -93
+Z16 tExplicit 1 CvgOpt 0
+Appm_generate_arch
+R5
+R6
+R7
+DEx4 work 12 ppm_generate 0 22 ^k4Vo3@gFdMGdl`:P:OO_0
+l36
+L17
+V6n4mMS^fXUYQEWPB?2j0:3
+!s100 Kk>bBFDn[i>EmHhWm^Jb02
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 0
+R15
+R16
